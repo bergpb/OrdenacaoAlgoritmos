@@ -2,20 +2,55 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content style = "background-color: darkgrey;" padding>
   <ion-content class="card-background-page">
-    
-      <ion-card (click)="Estrutura()">         
-        <img src="assets/imgs/FilaPilhaLista.png"/>
-        <div class="card-title">Estruturação de dados</div>
-        <div class="card-subtitle">Pilha-Lista-Fila</div>
-      </ion-card>
-    
-      <ion-card>
-        <img  src="assets/imgs/Ordena.png"/>
-        <div class="card-title">Métodos de Ordenação</div>
-        <div class="card-subtitle">Merge-Bubble-Insert-Quick</div>
-      </ion-card>
-    
+    <div class="row">
+        <div class="col">
+        <ion-card (click)="Estrutura()">
+        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
+        <div class="card-title">Fila</div>
+        <div class="card-subtitle">FIFO</div>
+        </ion-card>
+      </div>
+      <div class="col">
+        <ion-card>
+        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
+        <div class="card-title">Pilha</div>
+        <div class="card-subtitle">LIFO</div>
+        </ion-card>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <ion-card (click)="Estrutura()">
+        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
+        <div class="card-title">Lista</div>
+        <div class="card-subtitle">Sequência</div>
+        </ion-card>
+      </div>
+      <div class="col">
+        <ion-card>
+        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
+        <div class="card-title">Inserir</div>
+        <div class="card-subtitle">Insert Sort</div>
+        </ion-card>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <ion-card (click)="Estrutura()">
+        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
+        <div class="card-title">Bolha</div>
+        <div class="card-subtitle">Bubble Sort</div>
+        </ion-card>
+      </div>
+      <div class="col">
+        <ion-card>
+        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
+        <div class="card-title">Mistura</div>
+        <div class="card-subtitle">Merge Sort</div>
+        </ion-card>
+      </div>
+    </div>
     </ion-content>
 </ion-content>

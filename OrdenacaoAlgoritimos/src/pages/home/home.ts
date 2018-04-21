@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AboutPage } from '../about/about';
+import { FilaPage } from '../fila/fila';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  aboutPage: any;
+  filaPage: any;
   
   constructor(public navCtrl: NavController) {
-    this.aboutPage = AboutPage;
+    this.filaPage = FilaPage;
   }
   Estrutura(){
-    this.navCtrl.push(this.aboutPage, {
-            userData: "xxx"
+    this.navCtrl.push(this.filaPage, {
+            
         });
   }
 }
