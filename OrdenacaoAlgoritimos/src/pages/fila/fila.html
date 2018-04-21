@@ -2,25 +2,28 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-slides pager>
-        
-          <ion-slide (click)="Estrutura()">
-              <img src="assets/imgs/Fila.gif"/>
-            <h2>Fila</h2>
-            <p>Uma fila é uma estrutura de dados dinâmica que admite remoção de elementos e inserção de novos objetos.  Mais especificamente, uma  fila  (= queue)  é uma estrutura sujeita à seguinte regra de operação:  sempre que houver uma remoção,o elemento removido é o que está na estrutura há mais tempo. Em outras palavras, o primeiro objeto inserido na fila é também o primeiro a ser removido. Essa política é conhecida pela sigla FIFO (= First-In-First-Out).</p>
-                
-          </ion-slide>
-          <ion-slide style="-webkit-align-items: normal; background-color:#fff;">
-            <div class="row">
-            <div class="col"><img style="float: left" src="assets/imgs/Pilhain.gif"/></div>
-            <div class="col"><img style="float: left" src="assets/imgs/Pilhaout.gif"/></div>
-            </div><h2> Pilha </h2>
-            <p>Uma pilha é uma estrutura de dados que admite remoção de elementos e inserção de novos objetos.  Mais especificamente, uma  pilha (= stack)  é uma estrutura sujeita à seguinte regra de operação:  sempre que houver uma remoção,o elemento removido é o que está na estrutura há menos tempo. Em outras palavras, o primeiro objeto a ser inserido na pilha é o último a ser removido. Essa política é conhecida pela sigla LIFO (= Last-In-First-Out).</p>
-          </ion-slide>
-        
-          <ion-slide style="background-color: red">
-            <h2>Slide 3</h2>
-          </ion-slide>
-        
-        </ion-slides>
+    <div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="Estatica">
+      Estatica
+    </ion-segment-button>
+    <ion-segment-button value="Dinamica">
+      Dinamica
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'Estatica'">
+    <ion-item>
+      <h2>Fila Estática</h2>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'Dinamica'">
+    <ion-item>
+      <h2>Fila Dinamica</h2>
+    </ion-item>
+  </ion-list>
+</div>
 </ion-content>
