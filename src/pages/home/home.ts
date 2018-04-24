@@ -14,8 +14,8 @@ export class HomePage {
   
   constructor(public navCtrl: NavController) {
   this.filaPage = FilaPage;
-  this.pilhaPage = FilaPage;
-  this.listaPage = FilaPage;
+  this.pilhaPage = PilhaPage;
+  this.listaPage = ListaPage;
   }
   EstruturaFila(){
     this.navCtrl.push(this.filaPage);
