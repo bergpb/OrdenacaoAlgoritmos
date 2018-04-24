@@ -27,6 +27,7 @@ export class MyApp {
       { title: 'Fila', component: FilaPage },
       { title: 'Pilha', component: PilhaPage },
       { title: 'Lista', component: ListaPage },
+      
     ];
 
   }

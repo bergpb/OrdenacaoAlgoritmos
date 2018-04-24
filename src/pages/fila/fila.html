@@ -13,13 +13,16 @@
 <p>Mais especificamente, uma  fila é uma estrutura sujeita à seguinte regra de operação:  sempre que houver uma remoção,o elemento removido é o que está na estrutura há mais tempo.</p>
 <p>Em outras palavras, o primeiro objeto inserido na fila é também o primeiro a ser removido. Essa política é conhecida pela sigla FIFO (= First-In-First-Out).
 </p>
+<span style="margin-top: 100px">
 <div class="row">
   <div class="col">
-    <button ion-button color="light">Código</button>
+    <button ion-button color="light" (click)="openModalCodigo()">Código</button>
   </div>
   <div class="col">
-    <button ion-button color="light">Aplicação</button>
+    <button ion-button color="light" (click)="openModalAplicacao()">Aplicação</button>
   </div>
 </div>
+</span>
+
 <a href="https://www.ime.usp.br/~pf/algoritmos/aulas/fila.html">Referência</a>
 </ion-content>
