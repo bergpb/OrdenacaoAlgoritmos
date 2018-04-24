@@ -21,8 +21,8 @@
         </ion-card>
       </div>
       <div class="col">
-        <ion-card>
-        <img  src="assets/imgs/Ordena.png" style="opacity: 0.2;"/>
+        <ion-card (click)="EstruturaPilha()">
+        <img src="assets/imgs/Ordena.png" style="opacity: 0.2;"/>
         <div class="card-title">Pilha</div>
         <div class="card-subtitle">LIFO</div>
         </ion-card>
@@ -30,7 +30,7 @@
     </div>
     <div class="row">
         <div class="col">
-        <ion-card (click)="Estrutura()">
+        <ion-card (click)="EstruturaLista()">
         <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
         <div class="card-title">Lista</div>
         <div class="card-subtitle">Sequência</div>
