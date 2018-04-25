@@ -21,5 +21,7 @@ export class ModalFilaAplicacaoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalFilaAplicacaoPage');
   }
-
+ closeModal() {
+    this.viewCtrl.dismiss();
+  }
 }

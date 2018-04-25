@@ -9,8 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { FilaPage } from '../pages/fila/fila';
 import { PilhaPage } from '../pages/pilha/pilha';
 import { ListaPage } from '../pages/lista/lista';
-import { ModalFilaCodigo } from '../pages/modal-fila-codigo/modal-fila-codigo';
-import { ModalFilaAplicacao } from '../pages/modal-fila-aplicacao/modal-fila-aplicacao';
+import { ModalFilaCodigoPage } from '../pages/modal-fila-codigo/modal-fila-codigo';
+import { ModalFilaAplicacaoPage } from '../pages/modal-fila-aplicacao/modal-fila-aplicacao';
 
 
 @NgModule({
@@ -20,8 +20,8 @@ import { ModalFilaAplicacao } from '../pages/modal-fila-aplicacao/modal-fila-apl
     FilaPage,
     PilhaPage,
     ListaPage,
-    ModalFilaCodigo,
-    ModalFilaAplicacao
+    ModalFilaCodigoPage,
+    ModalFilaAplicacaoPage
   ],
   imports: [
     BrowserModule,
@@ -34,8 +34,8 @@ import { ModalFilaAplicacao } from '../pages/modal-fila-aplicacao/modal-fila-apl
     FilaPage,
     PilhaPage,
     ListaPage,
-    ModalFilaCodigo,
-    ModalFilaAplicacao
+    ModalFilaCodigoPage,
+    ModalFilaAplicacaoPage
   ],
   providers: [
     StatusBar,
