@@ -14,31 +14,56 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
   templateUrl: 'modal-fila-aplicacao.html',
 })
 export class ModalFilaAplicacaoPage {
-  
-  num: integer;
-  fila: any = [];
-  
+
+  public inicio: any = 0;
+  public fim: any = -1;
+  public num: any;
+  public fila: any;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+    this.fila = new Array();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalFilaAplicacaoPage');
   }
-  
+
+  atualizaFila(){
+    let filaAux = new Array();
+    filaAux = this.fila;
+    let inicioAux = this.inicio;
+    this.fila = new Array();
+    console.log("Fora do While");
+    while(inicioAux <= this.fim){
+      console.log("Dentro do While");
+      console.log(filaAux[inicioAux]);
+      this.fila.push(filaAux[inicioAux]);
+      inicioAux++;
+    }
+
+    this.inicio = 0;
+    this.fim = this.fila.length - 1;
+  }
+
   insert(){
     console.log("Valor inserido: " + this.num);
+    this.fim++;
     this.fila.push(this.num);
     console.log(this.fila);
-    this.num = "";
+    this.num = null;
   }
-  
+
   remove(){
-    console.log("Valor removido: " + this.num);
-    this.fila.splice();
+    this.inicio++;
+    this.atualizaFila();
     console.log(this.fila);
+    console.log(this.inicio);
+    console.log(this.fim);
   }
-  
+
+
+
   closeModal() {
     this.viewCtrl.dismiss();
   }
