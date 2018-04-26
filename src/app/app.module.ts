@@ -13,6 +13,9 @@ import { ModalFilaCodigoPage } from '../pages/modal-fila-codigo/modal-fila-codig
 import { ModalFilaAplicacaoPage } from '../pages/modal-fila-aplicacao/modal-fila-aplicacao';
 import { ModalPilhaCodigoPage } from '../pages/modal-pilha-codigo/modal-pilha-codigo';
 import { ModalPilhaAplicacaoPage } from '../pages/modal-pilha-aplicacao/modal-pilha-aplicacao';
+import { ModalListaCodigoPage } from '../pages/modal-lista-codigo/modal-lista-codigo';
+import { ModalListaAplicacaoPage } from '../pages/modal-lista-aplicacao/modal-lista-aplicacao';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { ModalPilhaAplicacaoPage } from '../pages/modal-pilha-aplicacao/modal-pi
     ModalFilaCodigoPage,
     ModalFilaAplicacaoPage,
     ModalPilhaCodigoPage,
-    ModalPilhaAplicacaoPage
+    ModalPilhaAplicacaoPage,
+    ModalListaCodigoPage,
+    ModalListaAplicacaoPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,9 @@ import { ModalPilhaAplicacaoPage } from '../pages/modal-pilha-aplicacao/modal-pi
     ModalFilaCodigoPage,
     ModalFilaAplicacaoPage,
     ModalPilhaCodigoPage,
-    ModalPilhaAplicacaoPage
+    ModalPilhaAplicacaoPage,
+    ModalListaCodigoPage,
+    ModalListaAplicacaoPage
   ],
   providers: [
     StatusBar,
