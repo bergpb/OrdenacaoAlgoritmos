@@ -170,10 +170,9 @@ var ModalPilhaAplicacaoPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-modal-pilha-aplicacao',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/modal-pilha-aplicacao/modal-pilha-aplicacao.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>modal_fila_aplicacao</ion-title>\n  </ion-navbar>\n  <button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Pilha </h2>\n\n<button ion-button color="secondary" outline >Insere</button>\n<button ion-button color="danger" outline >Retira</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/modal-pilha-aplicacao/modal-pilha-aplicacao.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]])
     ], ModalPilhaAplicacaoPage);
     return ModalPilhaAplicacaoPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=modal-pilha-aplicacao.js.map
@@ -220,10 +219,9 @@ var ModalPilhaCodigoPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-modal-pilha-codigo',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/modal-pilha-codigo/modal-pilha-codigo.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Código</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n<button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-content>'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/modal-pilha-codigo/modal-pilha-codigo.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]])
     ], ModalPilhaCodigoPage);
     return ModalPilhaCodigoPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=modal-pilha-codigo.js.map
@@ -264,23 +262,23 @@ var map = {
 		6
 	],
 	"../pages/modal-fila-codigo/modal-fila-codigo.module": [
-		279,
+		283,
 		5
 	],
 	"../pages/modal-lista-aplicacao/modal-lista-aplicacao.module": [
-		280,
+		279,
 		1
 	],
 	"../pages/modal-lista-codigo/modal-lista-codigo.module": [
-		281,
+		280,
 		0
 	],
 	"../pages/modal-pilha-aplicacao/modal-pilha-aplicacao.module": [
-		282,
+		281,
 		4
 	],
 	"../pages/modal-pilha-codigo/modal-pilha-codigo.module": [
-		283,
+		282,
 		3
 	],
 	"../pages/pilha/pilha.module": [
@@ -436,11 +434,11 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/fila/fila.module#FilaPageModule', name: 'FilaPage', segment: 'fila', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lista/lista.module#ListaPageModule', name: 'ListaPage', segment: 'lista', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-fila-aplicacao/modal-fila-aplicacao.module#ModalFilaAplicacaoPageModule', name: 'ModalFilaAplicacaoPage', segment: 'modal-fila-aplicacao', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modal-fila-codigo/modal-fila-codigo.module#ModalFilaCodigoPageModule', name: 'ModalFilaCodigoPage', segment: 'modal-fila-codigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-lista-aplicacao/modal-lista-aplicacao.module#ModalListaAplicacaoPageModule', name: 'ModalListaAplicacaoPage', segment: 'modal-lista-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-lista-codigo/modal-lista-codigo.module#ModalListaCodigoPageModule', name: 'ModalListaCodigoPage', segment: 'modal-lista-codigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-pilha-aplicacao/modal-pilha-aplicacao.module#ModalPilhaAplicacaoPageModule', name: 'ModalPilhaAplicacaoPage', segment: 'modal-pilha-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-pilha-codigo/modal-pilha-codigo.module#ModalPilhaCodigoPageModule', name: 'ModalPilhaCodigoPage', segment: 'modal-pilha-codigo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modal-fila-codigo/modal-fila-codigo.module#ModalFilaCodigoPageModule', name: 'ModalFilaCodigoPage', segment: 'modal-fila-codigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pilha/pilha.module#PilhaPageModule', name: 'PilhaPage', segment: 'pilha', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -692,7 +690,7 @@ var PilhaPage = /** @class */ (function () {
     };
     PilhaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pilha',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/pilha/pilha.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pilha</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n<p>Falta Por</p>\n\n<a href="https://www.ime.usp.br/~pf/algoritmos/aulas/fila.html">Referência</a>\n</ion-content>\n<ion-footer><div class="row">\n  <div class="col">\n    <button ion-button full color="secondary" (click)="openModalCodigo()">Código</button>\n  </div>\n  <div class="col">\n    <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>\n  </div>\n</div></ion-footer>'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/pilha/pilha.html"*/,
+            selector: 'page-pilha',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/pilha/pilha.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pilha</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <div class="row">\n    <div class="col">\n      <img src="assets/imgs/Pilhain.gif"/>\n    </div>\n    <div class="col">\n      <img src="assets/imgs/Pilhaout.gif"/>\n    </div>\n  </div>\n<p>Uma pilha é uma estrutura de dados que admite remoção de elementos e inserção de novos objetos. </p>\n<p>Mais especificamente, uma  pilha (= stack)  é uma estrutura sujeita à seguinte regra de operação:  sempre que houver uma remoção,\no elemento removido é o que está na estrutura há menos tempo.</p>\n<p>Em outras palavras, o primeiro objeto a ser inserido na pilha é o último a ser removido. Essa política é conhecida pela sigla LIFO (= Last-In-First-Out).\n</p>\n\n<a href="https://www.ime.usp.br/~pf/algoritmos/aulas/pilha.html">Referência</a>\n</ion-content>\n<ion-footer><div class="row">\n  <div class="col">\n    <button ion-button full color="secondary" (click)="openModalCodigo()">Código</button>\n  </div>\n  <div class="col">\n    <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>\n  </div>\n</div></ion-footer>'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/pilha/pilha.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
     ], PilhaPage);
