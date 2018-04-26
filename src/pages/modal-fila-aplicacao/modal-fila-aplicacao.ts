@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the ModalFilaAplicacaoPage page.
@@ -21,7 +21,7 @@ export class ModalFilaAplicacaoPage {
   public fila: any;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+  constructor(private alertCtrl: AlertController, public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
     this.fila = new Array();
   }
 
@@ -34,10 +34,7 @@ export class ModalFilaAplicacaoPage {
     filaAux = this.fila;
     let inicioAux = this.inicio;
     this.fila = new Array();
-    console.log("Fora do While");
     while(inicioAux <= this.fim){
-      console.log("Dentro do While");
-      console.log(filaAux[inicioAux]);
       this.fila.push(filaAux[inicioAux]);
       inicioAux++;
     }
@@ -55,11 +52,18 @@ export class ModalFilaAplicacaoPage {
   }
 
   remove(){
-    this.inicio++;
-    this.atualizaFila();
-    console.log(this.fila);
-    console.log(this.inicio);
-    console.log(this.fim);
+    if(this.fila.length > 0){
+      this.inicio++;
+      this.atualizaFila();
+      console.log(this.fila);
+    } else {
+      let alert = this.alertCtrl.create({
+      title: 'Falha!',
+      subTitle: 'Fila está vazia, você não pode retirar!',
+      buttons: ['Ok']
+      });
+      alert.present();
+    }
   }
 
 
