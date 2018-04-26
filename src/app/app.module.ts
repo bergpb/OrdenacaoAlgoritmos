@@ -12,6 +12,8 @@ import { ListaPage } from '../pages/lista/lista';
 import { InserirPage } from '../pages/inserir/inserir';
 import { BolhaPage } from '../pages/bolha/bolha';
 import { MisturaPage } from '../pages/mistura/mistura';
+import { BuscasPage } from '../pages/buscas/buscas';
+import { QuickPage } from '../pages/quick/quick';
 import { ModalFilaCodigoPage } from '../pages/modal-fila-codigo/modal-fila-codigo';
 import { ModalFilaAplicacaoPage } from '../pages/modal-fila-aplicacao/modal-fila-aplicacao';
 import { ModalPilhaCodigoPage } from '../pages/modal-pilha-codigo/modal-pilha-codigo';
@@ -46,7 +48,9 @@ import { ModalBolhaAplicacaoPage } from '../pages/modal-bolha-aplicacao/modal-bo
     ModalMisturaCodigoPage,
     ModalMisturaAplicacaoPage,
     ModalBolhaCodigoPage,
-    ModalBolhaAplicacaoPage
+    ModalBolhaAplicacaoPage,
+    BuscasPage,
+    QuickPage
     
   ],
   imports: [
@@ -74,7 +78,9 @@ import { ModalBolhaAplicacaoPage } from '../pages/modal-bolha-aplicacao/modal-bo
     ModalMisturaCodigoPage,
     ModalMisturaAplicacaoPage,
     ModalBolhaCodigoPage,
-    ModalBolhaAplicacaoPage
+    ModalBolhaAplicacaoPage,
+    BuscasPage,
+    QuickPage
   ],
   providers: [
     StatusBar,

@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 304:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PilhaPageModule", function() { return PilhaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuickPageModule", function() { return QuickPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pilha__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quick__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PilhaPageModule = /** @class */ (function () {
-    function PilhaPageModule() {
+var QuickPageModule = /** @class */ (function () {
+    function QuickPageModule() {
     }
-    PilhaPageModule = __decorate([
+    QuickPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__pilha__["a" /* PilhaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__quick__["a" /* QuickPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__pilha__["a" /* PilhaPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__quick__["a" /* QuickPage */]),
             ],
         })
-    ], PilhaPageModule);
-    return PilhaPageModule;
+    ], QuickPageModule);
+    return QuickPageModule;
 }());
 
-//# sourceMappingURL=pilha.module.js.map
+//# sourceMappingURL=quick.module.js.map
 
 /***/ })
 

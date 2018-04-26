@@ -1,14 +1,14 @@
 webpackJsonp([14],{
 
-/***/ 290:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListaPageModule", function() { return ListaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MisturaPageModule", function() { return MisturaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lista__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mistura__ = __webpack_require__(113);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ListaPageModule = /** @class */ (function () {
-    function ListaPageModule() {
+var MisturaPageModule = /** @class */ (function () {
+    function MisturaPageModule() {
     }
-    ListaPageModule = __decorate([
+    MisturaPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__lista__["a" /* ListaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__mistura__["a" /* MisturaPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__lista__["a" /* ListaPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__mistura__["a" /* MisturaPage */]),
             ],
         })
-    ], ListaPageModule);
-    return ListaPageModule;
+    ], MisturaPageModule);
+    return MisturaPageModule;
 }());
 
-//# sourceMappingURL=lista.module.js.map
+//# sourceMappingURL=mistura.module.js.map
 
 /***/ })
 

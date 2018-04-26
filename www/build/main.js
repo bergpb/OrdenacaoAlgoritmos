@@ -1,4 +1,4 @@
-webpackJsonp([18],{
+webpackJsonp([20],{
 
 /***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,7 +6,7 @@ webpackJsonp([18],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BolhaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_bolha_codigo_modal_bolha_codigo__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_bolha_aplicacao_modal_bolha_aplicacao__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -67,7 +67,7 @@ var BolhaPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBolhaCodigoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -116,7 +116,7 @@ var ModalBolhaCodigoPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBolhaAplicacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -163,9 +163,54 @@ var ModalBolhaAplicacaoPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuscasPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the BuscasPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var BuscasPage = /** @class */ (function () {
+    function BuscasPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    BuscasPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BuscasPage');
+    };
+    BuscasPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-buscas',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Buscas</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img src="assets/imgs/Buscabinseq.gif"/>\n<h4>Binaria</h4>\n<p>A pesquisa ou busca binária (em inglês binary search algorithm ou binary chop) é um algoritmo de busca em vetores que segue o paradigma de divisão e conquista. Ela parte do pressuposto de que o vetor está ordenado e realiza sucessivas divisões do espaço de busca comparando o elemento buscado (chave) com o elemento no meio do vetor. Se o elemento do meio do vetor for a chave, a busca termina com sucesso. Caso contrário, se o elemento do meio vier antes do elemento buscado, então a busca continua na metade posterior do vetor. E finalmente, se o elemento do meio vier depois da chave, a busca continua na metade anterior do vetor.</p>\n<h4>Sequencial</h4>\n<p>Encontrar informações em uma matriz desordenada requer uma pesquisa\nsequencial, começando no primeiro elemento e parando quando o elemento procurado\nou o final da matriz é encontrado. Esse método deve ser usado em dados desordenados,\nmas também pode ser aplicado a dados ordenados.\nÉ fácil de ser codificada. Funciona da seguinte forma: a partir do primeiro\nregistro, pesquise sequencialmente até encontrar a chave procurada; então pare.</p>\n<a href="https://erinaldosn.files.wordpress.com/2010/12/aula33.pdf">Referência</a>\n</ion-content>\n'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], BuscasPage);
+    return BuscasPage;
+}());
+
+//# sourceMappingURL=buscas.js.map
+
+/***/ }),
+
+/***/ 106:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalFilaCodigoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -208,13 +253,13 @@ var ModalFilaCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalFilaAplicacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -295,15 +340,15 @@ var ModalFilaAplicacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 107:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InserirPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -352,13 +397,13 @@ var InserirPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalInserirCodigoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -401,13 +446,13 @@ var ModalInserirCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalInserirAplicacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -451,13 +496,13 @@ var ModalInserirAplicacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 110:
+/***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalListaCodigoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -500,13 +545,13 @@ var ModalListaCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 111:
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalListaAplicacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -549,15 +594,15 @@ var ModalListaAplicacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 112:
+/***/ 113:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MisturaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_mistura_codigo_modal_mistura_codigo__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_mistura_aplicacao_modal_mistura_aplicacao__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_mistura_codigo_modal_mistura_codigo__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_mistura_aplicacao_modal_mistura_aplicacao__ = __webpack_require__(115);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -610,13 +655,13 @@ var MisturaPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalMisturaCodigoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -659,13 +704,13 @@ var ModalMisturaCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 114:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalMisturaAplicacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -708,13 +753,13 @@ var ModalMisturaAplicacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 115:
+/***/ 116:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalPilhaAplicacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -784,13 +829,13 @@ var ModalPilhaAplicacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 116:
+/***/ 117:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalPilhaCodigoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -833,7 +878,52 @@ var ModalPilhaCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 126:
+/***/ 118:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuickPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the QuickPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var QuickPage = /** @class */ (function () {
+    function QuickPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    QuickPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad QuickPage');
+    };
+    QuickPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-quick',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/quick/quick.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Quick</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img src="assets/imgs/Quicksort.gif"/>\n<p>O algoritmo quicksort é um método de ordenação muito rápido e eficiente, inventado por C.A.R. Hoare em 1960[1], quando visitou a Universidade de Moscovo como estudante. Naquela época, Hoare trabalhou em um projeto de tradução de máquina para o National Physical Laboratory. Ele criou o quicksort ao tentar traduzir um dicionário de inglês para russo, ordenando as palavras, tendo como objetivo reduzir o problema original em subproblemas que possam ser resolvidos mais fácil e rápido. Foi publicado em 1962 após uma série de refinamentos.</p>\n\n<a href="https://pt.wikipedia.org/wiki/Quicksort">Referência</a>\n</ion-content>\n'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/quick/quick.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], QuickPage);
+    return QuickPage;
+}());
+
+//# sourceMappingURL=quick.js.map
+
+/***/ }),
+
+/***/ 128:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -846,84 +936,92 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 126;
+webpackEmptyAsyncContext.id = 128;
 
 /***/ }),
 
-/***/ 167:
+/***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/bolha/bolha.module": [
-		287,
-		17
+		289,
+		19
+	],
+	"../pages/buscas/buscas.module": [
+		290,
+		18
 	],
 	"../pages/fila/fila.module": [
-		288,
-		16
+		291,
+		17
 	],
 	"../pages/inserir/inserir.module": [
-		289,
-		15
+		292,
+		16
 	],
 	"../pages/lista/lista.module": [
-		290,
-		14
+		293,
+		15
 	],
 	"../pages/mistura/mistura.module": [
-		291,
-		13
+		294,
+		14
 	],
 	"../pages/modal-bolha-aplicacao/modal-bolha-aplicacao.module": [
-		292,
-		12
+		295,
+		13
 	],
 	"../pages/modal-bolha-codigo/modal-bolha-codigo.module": [
-		293,
-		11
+		296,
+		12
 	],
 	"../pages/modal-fila-aplicacao/modal-fila-aplicacao.module": [
-		294,
-		10
+		297,
+		11
 	],
 	"../pages/modal-fila-codigo/modal-fila-codigo.module": [
-		295,
-		9
+		298,
+		10
 	],
 	"../pages/modal-inserir-aplicacao/modal-inserir-aplicacao.module": [
-		296,
-		8
+		299,
+		9
 	],
 	"../pages/modal-inserir-codigo/modal-inserir-codigo.module": [
-		297,
-		7
+		300,
+		8
 	],
 	"../pages/modal-lista-aplicacao/modal-lista-aplicacao.module": [
-		298,
-		6
+		301,
+		7
 	],
 	"../pages/modal-lista-codigo/modal-lista-codigo.module": [
-		299,
-		5
+		302,
+		6
 	],
 	"../pages/modal-mistura-aplicacao/modal-mistura-aplicacao.module": [
-		300,
-		4
+		303,
+		5
 	],
 	"../pages/modal-mistura-codigo/modal-mistura-codigo.module": [
-		301,
-		3
+		304,
+		4
 	],
 	"../pages/modal-pilha-aplicacao/modal-pilha-aplicacao.module": [
-		302,
-		2
+		305,
+		3
 	],
 	"../pages/modal-pilha-codigo/modal-pilha-codigo.module": [
-		303,
-		1
+		306,
+		2
 	],
 	"../pages/pilha/pilha.module": [
-		304,
+		307,
+		1
+	],
+	"../pages/quick/quick.module": [
+		308,
 		0
 	]
 };
@@ -938,24 +1036,26 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 167;
+webpackAsyncContext.id = 169;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 211:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fila_fila__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pilha_pilha__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lista_lista__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__inserir_inserir__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__inserir_inserir__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bolha_bolha__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mistura_mistura__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mistura_mistura__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__buscas_buscas__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__quick_quick__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -973,6 +1073,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
@@ -982,12 +1084,16 @@ var HomePage = /** @class */ (function () {
         this.inserirPage = __WEBPACK_IMPORTED_MODULE_5__inserir_inserir__["a" /* InserirPage */];
         this.bolhaPage = __WEBPACK_IMPORTED_MODULE_6__bolha_bolha__["a" /* BolhaPage */];
         this.misturaPage = __WEBPACK_IMPORTED_MODULE_7__mistura_mistura__["a" /* MisturaPage */];
+        this.buscasPage = __WEBPACK_IMPORTED_MODULE_8__buscas_buscas__["a" /* BuscasPage */];
+        this.quickPage = __WEBPACK_IMPORTED_MODULE_9__quick_quick__["a" /* QuickPage */];
         this.filaPage = __WEBPACK_IMPORTED_MODULE_2__fila_fila__["a" /* FilaPage */];
         this.pilhaPage = __WEBPACK_IMPORTED_MODULE_3__pilha_pilha__["a" /* PilhaPage */];
         this.listaPage = __WEBPACK_IMPORTED_MODULE_4__lista_lista__["a" /* ListaPage */];
         this.inserirPage = __WEBPACK_IMPORTED_MODULE_5__inserir_inserir__["a" /* InserirPage */];
         this.bolhaPage = __WEBPACK_IMPORTED_MODULE_6__bolha_bolha__["a" /* BolhaPage */];
         this.misturaPage = __WEBPACK_IMPORTED_MODULE_7__mistura_mistura__["a" /* MisturaPage */];
+        this.buscasPage = __WEBPACK_IMPORTED_MODULE_8__buscas_buscas__["a" /* BuscasPage */];
+        this.quickPage = __WEBPACK_IMPORTED_MODULE_9__quick_quick__["a" /* QuickPage */];
     }
     HomePage.prototype.EstruturaFila = function () {
         this.navCtrl.push(this.filaPage);
@@ -1007,26 +1113,33 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.OrdenacaoMistura = function () {
         this.navCtrl.push(this.misturaPage);
     };
+    HomePage.prototype.OrdenacaoBuscas = function () {
+        this.navCtrl.push(this.buscasPage);
+    };
+    HomePage.prototype.OrdenacaoQuick = function () {
+        this.navCtrl.push(this.quickPage);
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n        \n    <h2>Estrutura de dados</h2>\n    <h4>Conceitos e aplicação</h4>\n  \n  <ion-content class="card-background-page">\n    <div class="row">\n        <div class="col">\n        <ion-card (click)="EstruturaFila()">\n        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.2;"/>\n        <div class="card-title">Fila</div>\n        <div class="card-subtitle">FIFO</div>\n        </ion-card>\n      </div>\n      <div class="col">\n        <ion-card (click)="EstruturaPilha()">\n        <img src="assets/imgs/Ordena.png" style="opacity: 0.2;"/>\n        <div class="card-title">Pilha</div>\n        <div class="card-subtitle">LIFO</div>\n        </ion-card>\n      </div>\n    </div>\n    <div class="row">\n        <div class="col">\n        <ion-card (click)="EstruturaLista()">\n        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>\n        <div class="card-title">Lista</div>\n        <div class="card-subtitle">Sequência</div>\n        </ion-card>\n      </div>\n      <div class="col">\n        <ion-card (click)="OrdenacaoInserir()">\n        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>\n        <div class="card-title">Inserir</div>\n        <div class="card-subtitle">Insert Sort</div>\n        </ion-card>\n      </div>\n    </div>\n    <div class="row">\n        <div class="col">\n        <ion-card (click)="OrdenacaoBolha()">\n        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>\n        <div class="card-title">Bolha</div>\n        <div class="card-subtitle">Bubble Sort</div>\n        </ion-card>\n      </div>\n      <div class="col">\n        <ion-card (click)="OrdenacaoMistura()">\n        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>\n        <div class="card-title">Mistura</div>\n        <div class="card-subtitle">Merge Sort</div>\n        </ion-card>\n      </div>\n    </div>\n    </ion-content>\n</ion-content>\n'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n        \n    <h2>Estrutura de dados</h2>\n    <h4>Conceitos e aplicação</h4>\n  \n  <ion-content class="card-background-page">\n    <div class="row">\n        <div class="col">\n        <ion-card (click)="EstruturaFila()">\n        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.2;"/>\n        <div class="card-title">Fila</div>\n        <div class="card-subtitle">FIFO</div>\n        </ion-card>\n      </div>\n      <div class="col">\n        <ion-card (click)="EstruturaPilha()">\n        <img src="assets/imgs/Ordena.png" style="opacity: 0.2;"/>\n        <div class="card-title">Pilha</div>\n        <div class="card-subtitle">LIFO</div>\n        </ion-card>\n      </div>\n    </div>\n    <div class="row">\n        <div class="col">\n        <ion-card (click)="EstruturaLista()">\n        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>\n        <div class="card-title">Lista</div>\n        <div class="card-subtitle">Sequência</div>\n        </ion-card>\n      </div>\n      <div class="col">\n        <ion-card (click)="OrdenacaoInserir()">\n        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>\n        <div class="card-title">Inserir</div>\n        <div class="card-subtitle">Insert Sort</div>\n        </ion-card>\n      </div>\n    </div>\n    <div class="row">\n        <div class="col">\n        <ion-card (click)="OrdenacaoBolha()">\n        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>\n        <div class="card-title">Bolha</div>\n        <div class="card-subtitle">Bubble Sort</div>\n        </ion-card>\n      </div>\n      <div class="col">\n        <ion-card (click)="OrdenacaoMistura()">\n        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>\n        <div class="card-title">Mistura</div>\n        <div class="card-subtitle">Merge Sort</div>\n        </ion-card>\n      </div>\n    </div>\n    <div class="row">\n        <div class="col">\n        <ion-card (click)="OrdenacaoQuick()">\n        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>\n        <div class="card-title">Rápida</div>\n        <div class="card-subtitle">Quick Sort</div>\n        </ion-card>\n      </div>\n      <div class="col">\n        <ion-card (click)="OrdenacaoBuscas()">\n        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>\n        <div class="card-title">Binaria e Sequencial</div>\n        <div class="card-subtitle">Bin & Seque Search</div>\n        </ion-card>\n      </div>\n    </div>\n    </ion-content>\n</ion-content>\n'/*ion-inline-end:"/home/nardier/Downloads/Development/OrdenacaoAlgoritmos/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object])
     ], HomePage);
     return HomePage;
+    var _a;
 }());
 
 //# sourceMappingURL=home.js.map
 
 /***/ }),
 
-/***/ 212:
+/***/ 214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(237);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1034,42 +1147,46 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 235:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_fila_fila__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_pilha_pilha__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_lista_lista__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_inserir_inserir__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_inserir_inserir__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_bolha_bolha__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_mistura_mistura__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_modal_mistura_codigo_modal_mistura_codigo__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_modal_mistura_aplicacao_modal_mistura_aplicacao__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_modal_bolha_codigo_modal_bolha_codigo__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_modal_bolha_aplicacao_modal_bolha_aplicacao__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_mistura_mistura__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_buscas_buscas__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_quick_quick__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_modal_mistura_codigo_modal_mistura_codigo__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_modal_mistura_aplicacao_modal_mistura_aplicacao__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_modal_bolha_codigo_modal_bolha_codigo__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_modal_bolha_aplicacao_modal_bolha_aplicacao__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -1109,24 +1226,27 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_bolha_bolha__["a" /* BolhaPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_inserir_inserir__["a" /* InserirPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_mistura_mistura__["a" /* MisturaPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_modal_fila_codigo_modal_fila_codigo__["a" /* ModalFilaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_modal_fila_aplicacao_modal_fila_aplicacao__["a" /* ModalFilaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_modal_pilha_codigo_modal_pilha_codigo__["a" /* ModalPilhaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__["a" /* ModalPilhaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_modal_lista_codigo_modal_lista_codigo__["a" /* ModalListaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_modal_lista_aplicacao_modal_lista_aplicacao__["a" /* ModalListaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_modal_inserir_codigo_modal_inserir_codigo__["a" /* ModalInserirCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__["a" /* ModalInserirAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_modal_mistura_codigo_modal_mistura_codigo__["a" /* ModalMisturaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_modal_mistura_aplicacao_modal_mistura_aplicacao__["a" /* ModalMisturaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_modal_bolha_codigo_modal_bolha_codigo__["a" /* ModalBolhaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_24__pages_modal_bolha_aplicacao_modal_bolha_aplicacao__["a" /* ModalBolhaAplicacaoPage */]
+                __WEBPACK_IMPORTED_MODULE_15__pages_modal_fila_codigo_modal_fila_codigo__["a" /* ModalFilaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_modal_fila_aplicacao_modal_fila_aplicacao__["a" /* ModalFilaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_modal_pilha_codigo_modal_pilha_codigo__["a" /* ModalPilhaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__["a" /* ModalPilhaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_modal_lista_codigo_modal_lista_codigo__["a" /* ModalListaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_modal_lista_aplicacao_modal_lista_aplicacao__["a" /* ModalListaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_modal_inserir_codigo_modal_inserir_codigo__["a" /* ModalInserirCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__["a" /* ModalInserirAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_modal_mistura_codigo_modal_mistura_codigo__["a" /* ModalMisturaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_24__pages_modal_mistura_aplicacao_modal_mistura_aplicacao__["a" /* ModalMisturaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_modal_bolha_codigo_modal_bolha_codigo__["a" /* ModalBolhaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_26__pages_modal_bolha_aplicacao_modal_bolha_aplicacao__["a" /* ModalBolhaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_buscas_buscas__["a" /* BuscasPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_quick_quick__["a" /* QuickPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/bolha/bolha.module#BolhaPageModule', name: 'BolhaPage', segment: 'bolha', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/buscas/buscas.module#BuscasPageModule', name: 'BuscasPage', segment: 'buscas', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fila/fila.module#FilaPageModule', name: 'FilaPage', segment: 'fila', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/inserir/inserir.module#InserirPageModule', name: 'InserirPage', segment: 'inserir', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lista/lista.module#ListaPageModule', name: 'ListaPage', segment: 'lista', priority: 'low', defaultHistory: [] },
@@ -1143,7 +1263,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/modal-mistura-codigo/modal-mistura-codigo.module#ModalMisturaCodigoPageModule', name: 'ModalMisturaCodigoPage', segment: 'modal-mistura-codigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-pilha-aplicacao/modal-pilha-aplicacao.module#ModalPilhaAplicacaoPageModule', name: 'ModalPilhaAplicacaoPage', segment: 'modal-pilha-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-pilha-codigo/modal-pilha-codigo.module#ModalPilhaCodigoPageModule', name: 'ModalPilhaCodigoPage', segment: 'modal-pilha-codigo', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/pilha/pilha.module#PilhaPageModule', name: 'PilhaPage', segment: 'pilha', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/pilha/pilha.module#PilhaPageModule', name: 'PilhaPage', segment: 'pilha', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quick/quick.module#QuickPageModule', name: 'QuickPage', segment: 'quick', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -1157,18 +1278,20 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_bolha_bolha__["a" /* BolhaPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_inserir_inserir__["a" /* InserirPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_mistura_mistura__["a" /* MisturaPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_modal_fila_codigo_modal_fila_codigo__["a" /* ModalFilaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_modal_fila_aplicacao_modal_fila_aplicacao__["a" /* ModalFilaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_modal_pilha_codigo_modal_pilha_codigo__["a" /* ModalPilhaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__["a" /* ModalPilhaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_modal_lista_codigo_modal_lista_codigo__["a" /* ModalListaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_modal_lista_aplicacao_modal_lista_aplicacao__["a" /* ModalListaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_modal_inserir_codigo_modal_inserir_codigo__["a" /* ModalInserirCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__["a" /* ModalInserirAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_modal_mistura_codigo_modal_mistura_codigo__["a" /* ModalMisturaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_modal_mistura_aplicacao_modal_mistura_aplicacao__["a" /* ModalMisturaAplicacaoPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_modal_bolha_codigo_modal_bolha_codigo__["a" /* ModalBolhaCodigoPage */],
-                __WEBPACK_IMPORTED_MODULE_24__pages_modal_bolha_aplicacao_modal_bolha_aplicacao__["a" /* ModalBolhaAplicacaoPage */]
+                __WEBPACK_IMPORTED_MODULE_15__pages_modal_fila_codigo_modal_fila_codigo__["a" /* ModalFilaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_modal_fila_aplicacao_modal_fila_aplicacao__["a" /* ModalFilaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_modal_pilha_codigo_modal_pilha_codigo__["a" /* ModalPilhaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__["a" /* ModalPilhaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_modal_lista_codigo_modal_lista_codigo__["a" /* ModalListaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_modal_lista_aplicacao_modal_lista_aplicacao__["a" /* ModalListaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_modal_inserir_codigo_modal_inserir_codigo__["a" /* ModalInserirCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__["a" /* ModalInserirAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_modal_mistura_codigo_modal_mistura_codigo__["a" /* ModalMisturaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_24__pages_modal_mistura_aplicacao_modal_mistura_aplicacao__["a" /* ModalMisturaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_modal_bolha_codigo_modal_bolha_codigo__["a" /* ModalBolhaCodigoPage */],
+                __WEBPACK_IMPORTED_MODULE_26__pages_modal_bolha_aplicacao_modal_bolha_aplicacao__["a" /* ModalBolhaAplicacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_buscas_buscas__["a" /* BuscasPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_quick_quick__["a" /* QuickPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1184,16 +1307,16 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 286:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_fila_fila__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_pilha_pilha__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_lista_lista__ = __webpack_require__(51);
@@ -1265,9 +1388,9 @@ var MyApp = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1322,9 +1445,9 @@ var FilaPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1383,9 +1506,9 @@ var ListaPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PilhaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1432,5 +1555,5 @@ var PilhaPage = /** @class */ (function () {
 
 /***/ })
 
-},[212]);
+},[214]);
 //# sourceMappingURL=main.js.map
