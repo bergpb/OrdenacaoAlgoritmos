@@ -11,7 +11,8 @@ import { PilhaPage } from '../pages/pilha/pilha';
 import { ListaPage } from '../pages/lista/lista';
 import { ModalFilaCodigoPage } from '../pages/modal-fila-codigo/modal-fila-codigo';
 import { ModalFilaAplicacaoPage } from '../pages/modal-fila-aplicacao/modal-fila-aplicacao';
-
+import { ModalPilhaCodigoPage } from '../pages/modal-pilha-codigo/modal-pilha-codigo';
+import { ModalPilhaAplicacaoPage } from '../pages/modal-pilha-aplicacao/modal-pilha-aplicacao';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { ModalFilaAplicacaoPage } from '../pages/modal-fila-aplicacao/modal-fila
     PilhaPage,
     ListaPage,
     ModalFilaCodigoPage,
-    ModalFilaAplicacaoPage
+    ModalFilaAplicacaoPage,
+    ModalPilhaCodigoPage,
+    ModalPilhaAplicacaoPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,9 @@ import { ModalFilaAplicacaoPage } from '../pages/modal-fila-aplicacao/modal-fila
     PilhaPage,
     ListaPage,
     ModalFilaCodigoPage,
-    ModalFilaAplicacaoPage
+    ModalFilaAplicacaoPage,
+    ModalPilhaCodigoPage,
+    ModalPilhaAplicacaoPage
   ],
   providers: [
     StatusBar,
