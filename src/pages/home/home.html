@@ -37,7 +37,7 @@
         </ion-card>
       </div>
       <div class="col">
-        <ion-card>
+        <ion-card (click)="OrdenacaoInserir()">
         <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
         <div class="card-title">Inserir</div>
         <div class="card-subtitle">Insert Sort</div>
@@ -46,14 +46,14 @@
     </div>
     <div class="row">
         <div class="col">
-        <ion-card (click)="Estrutura()">
+        <ion-card (click)="OrdenacaoBolha()">
         <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
         <div class="card-title">Bolha</div>
         <div class="card-subtitle">Bubble Sort</div>
         </ion-card>
       </div>
       <div class="col">
-        <ion-card>
+        <ion-card (click)="OrdenacaoMistura()">
         <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
         <div class="card-title">Mistura</div>
         <div class="card-subtitle">Merge Sort</div>
