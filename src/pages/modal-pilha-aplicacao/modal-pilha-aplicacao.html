@@ -11,8 +11,24 @@
 
 <ion-content padding>
 <h2> Execução da Pilha </h2>
-
-<button ion-button color="secondary" outline >Insere</button>
-<button ion-button color="danger" outline >Retira</button>
+<div class="row">
+  <div *ngIf="pilha.length == 0">
+    <div style="color: red;">
+      Pilha vazia!
+    </div>
+  </div>
+  <div *ngFor="let item of pilha" style="width: 100%;">
+    <input class="form-control" type="number" style="width: 100%;text-align:center;" value={{item}}>
+  </div>
+</div>
+<br/>
+<h2> Operações da Pilha </h2>
+<div class="row">
+  <div style="width: 100%;">
+    <input [(ngModel)]="num">
+  </div>
+</div>
+<button class="form-control" ion-button color="secondary" outline (click)="insert()">Insere</button>
+<button class="form-control" ion-button color="danger" outline (click)="remove()">Retira</button>
 
 </ion-content>
