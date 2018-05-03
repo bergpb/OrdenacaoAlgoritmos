@@ -11,13 +11,29 @@
   <img src="assets/imgs/Insertsort.gif"/>
 <p>Insertion Sort, ou ordenação por inserção, é o algoritmo de ordenação que, dado uma estrutura (array, lista) constrói uma matriz final com um elemento de cada vez, uma inserção por vez. Assim como algoritmos de ordenação quadrática, é bastante eficiente para problemas com pequenas entradas, sendo o mais eficiente entre os algoritmos desta ordem de classificação.
 </p>
+<h5> Segue abaixo um pseudocódigo</h5>
 
-<a href="https://www.ime.usp.br/~pf/algoritmos/aulas/fila.html">Referência</a>
+<code style="white-space: pre-line;"> FUNÇÃO INSERTION_SORT (A[], tamanho)
+        VARIÁVEIS
+                i, j, eleito
+        PARA I <- 1 ATÉ (tamanho-1) FAÇA
+                eleito <- A[i];
+                j <- i-1;
+                ENQUANTO ((j>=0) E (eleito < A[j])) FAÇA
+                          A[j+1]:= A[j];
+# Elemento de lista numerada
+                          j:=j-1;
+                FIM_ENQUANTO
+                A[j+1] <- eleito;
+        FIM_PARA
+FIM;</code>
+                  <br/>
+                  <br/>
+
+<a href="https://pt.wikipedia.org/wiki/Insertion_sort">Referência</a>
 </ion-content>
 <ion-footer><div class="row">
-  <div class="col">
-    <button ion-button full color="secondary" (click)="openModalCodigo()">Código</button>
-  </div>
+  
   <div class="col">
     <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>
   </div>

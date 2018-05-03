@@ -22,7 +22,26 @@
 
 <p>Cada elemento da sequência é armazenado em uma célula da lista: o primeiro elemento na primeira célula, o segundo na segunda e assim por diante.
 </p>
+<h5> Segue abaixo um pseudocódigo</h5>
 
+<code style="white-space: pre-line;">
+  Nó de registro [
+     dados // O dado a ser armazenado no nó
+     próximo // Referência ao próximo nó; nulo para o último nó
+  ]
+  Lista de registros [
+      nó primironó // ponteiro para o primeiro nó da lista; null para uma lista
+      vazio
+  ]
+A lista é simples e fácil de abrir primeiro e depois de cada próximo até fim.
+
+  nó: = list.firstnó
+  enquanto nó não nulo [
+      nó: = nó.next
+  ]
+ </code>
+                  <br/>
+                  <br/>
 <a href="https://pt.wikipedia.org/wiki/Lista_ligada">Referência</a>
 </ion-content>
 <ion-footer><div class="row">

@@ -24,5 +24,36 @@ ou o final da matriz é encontrado. Esse método deve ser usado em dados desorde
 mas também pode ser aplicado a dados ordenados.
 É fácil de ser codificada. Funciona da seguinte forma: a partir do primeiro
 registro, pesquise sequencialmente até encontrar a chave procurada; então pare.</p>
+<h5> Segue abaixo os pseudocódigos</h5>
+<h6> Pesquisa Binária</h6>
+<code style="white-space: pre-line;">
+  BUSCA-BINÁRIA (V[], início, fim, e)
+    i recebe o índice do meio entre início e fim
+    se (v[i] = e) entao
+        devolva o índice i   # elemento e encontrado
+    fimse
+    se (inicio = fim) entao
+        não encontrou o elemento procurado
+    senão
+       se (V[i] vem antes de e) então
+          faça a BUSCA-BINÁRIA(V, i+1, fim, e)
+       senão
+          faça a BUSCA-BINÁRIA(V, inicio, i-1, e)
+       fimse
+    fimse
+ </code>
+ <h6> Pesquisa Binária</h6>
+<code style="white-space: pre-line;">
+PESQUISA-SEQUENCIAL
+procura (lista, elemento):
+verifica (lista, lista)
+por índice no intervalo (lista):
+se lista [indice] == elemento:
+retorna indice
+se não:
+retorna Nenhum
+ </code>
+                  <br/>
+                  <br/>
 <a href="https://erinaldosn.files.wordpress.com/2010/12/aula33.pdf">Referência</a>
 </ion-content>

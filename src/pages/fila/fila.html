@@ -13,17 +13,89 @@
 <p>Mais especificamente, uma  fila é uma estrutura sujeita à seguinte regra de operação:  sempre que houver uma remoção,o elemento removido é o que está na estrutura há mais tempo.</p>
 <p>Em outras palavras, o primeiro objeto inserido na fila é também o primeiro a ser removido. Essa política é conhecida pela sigla FIFO (= First-In-First-Out).
 </p>
-<span style="margin-top: 100px">
-  
+<h5> Segue abaixo um pseudocódigo</h5>
 
-</span>
+<code style="white-space: pre-line;">
+ Algoritmo Fila
+var
+varTipo fila_reg = registro
+varTipo fila_reg = reginicio: inteiro
+varTipo fila_reg = regfim: inteiro
+varTipo fila_reg = regelemento: vetor [1.50] de inteiro
+varTipo fila_reg = fim
+vartotal: inteiro
+varfila: fila_reg
+
+ inicio
+ varfila.inicio ← 0
+ varfila.fim ← 0
+ vartotal ← 0
+ 
+ Função vazia ( ): lógica
+ varinicio
+ varvaSe(total = 0) entao
+ varvaSe(return .v.
+ varvaSenão
+ varvaSe(return .f.
+ varvafim-se
+ varfim
+ 
+ Função cheia ( ): lógica
+ varinicio
+ varvaSe(total >=50) então
+ varvaSe(return .v.
+ varvaSenão
+ varvaSe(return .f.
+ varvafim-se
+ varfim
+ 
+ Procedimento enfileirar (elem: inteiro)
+ varinicio
+ varvaSe(cheia ( ) = .f..) então
+ arvaSe( fila.elemento[inicio] ← elem
+ arvaSe( fila.fim ← fila.fim + 1
+ arvaSe( total ← total + 1
+ varvaSe(fila.fim >= 50) então
+ varvaSe( fila.fim = 0
+ varvafim-se
+ varva Senão
+ varva enMostre(“Fila cheia”)
+ var vafim-se
+ var fim
+ 
+ Funcao desenfileirar ( ): inteiro
+ varvar
+ varv excluido: inteiro
+ varinicio
+ varva Se (vazia ( ) = .f.) então
+ arva enexcluido ← fila.elemento[inicio]
+ arva enfila.inicio ← fila.inicio + 1
+ arva enSe (fila.inicio > = tamanho) então
+ arva enfila.inicio ← 0
+ arv a fim-se
+ arva total ← total – 1 retorne excluido
+ varva Senão
+ varva excluído ← nulo
+ varva retorne excluído
+ varva fim-se
+ varfim
+ 
+ Procedimento exibefila ( )
+ varvar
+ Procedi: inteiro
+ varinicio
+ Proced Para (i ← 0 até total) faça
+ Proced ParMostre (“Posição “, i, “ valor ”, elemento [i] )
+ Proced fim-para
+ varfim
+ fim
+                </code>
+                  <br/>
+                  <br/>
 
 <a href="https://www.ime.usp.br/~pf/algoritmos/aulas/fila.html">Referência</a>
 </ion-content>
 <ion-footer><div class="row">
-  <div class="col">
-    <button ion-button full color="secondary" (click)="openModalCodigo()">Código</button>
-  </div>
   <div class="col">
     <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>
   </div>

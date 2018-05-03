@@ -12,8 +12,43 @@
 <p>O merge sort, ou ordenação por mistura, é um exemplo de algoritmo de ordenação por comparação do tipo dividir-para-conquistar.
 Sua ideia básica consiste em Dividir (o problema em vários sub-problemas e resolver esses sub-problemas através da recursividade) e Conquistar (após todos os sub-problemas terem sido resolvidos ocorre a conquista que é a união das resoluções dos sub-problemas). Como o algoritmo Merge Sort usa a recursividade, há um alto consumo de memória e tempo de execução, tornando esta técnica não muito eficiente em alguns problemas.
 </p>
+<h5> Segue abaixo um pseudocódigo</h5>
 
-<a href="https://www.ime.usp.br/~pf/algoritmos/aulas/fila.html">Referência</a>
+<code style="white-space: pre-line;">
+  função mergesort (var a como array)
+      se (n == 1) retorna a
+
+      var l1 como array = a [0] ... a [n / 2]
+      var l2 como array = a [n / 2 + 1] ... a [n]
+
+      l1 = mergesort (l1)
+      l2 = mergesort (l2)
+
+      Mesclagem de retorno (l1, l2)
+fim função
+
+função merge (var a como array, var b como array)
+      var c como array
+
+      enquanto (aeb tem elementos)
+           if (a [0]> b [0])
+                adicione b [0] ao final de c
+                remova b [0] de b
+           outro
+                adicione um [0] ao final de c
+                remova um [0] de um
+      while (a tem elementos)
+           adicione um [0] ao final de c
+           remova um [0] de um
+      while (b tem elementos)
+           adicione b [0] ao final de c
+           remova b [0] de b
+      retorno c
+fim função
+ </code>
+                  <br/>
+                  <br/>
+<a href="https://pt.wikipedia.org/wiki/Merge_sort">Referência</a>
 </ion-content>
 <ion-footer><div class="row">
   <div class="col">

@@ -16,6 +16,31 @@
   <h3>Conceito</h3>
   <img src="assets/imgs/Quicksort.gif"/>
 <p>O algoritmo quicksort é um método de ordenação muito rápido e eficiente, inventado por C.A.R. Hoare em 1960[1], quando visitou a Universidade de Moscovo como estudante. Naquela época, Hoare trabalhou em um projeto de tradução de máquina para o National Physical Laboratory. Ele criou o quicksort ao tentar traduzir um dicionário de inglês para russo, ordenando as palavras, tendo como objetivo reduzir o problema original em subproblemas que possam ser resolvidos mais fácil e rápido. Foi publicado em 1962 após uma série de refinamentos.</p>
+<h5> Segue abaixo um pseudocódigo</h5>
 
+<code style="white-space: pre-line;">
+  Quicksort (A como matriz, baixa como int, alta como int) [
+     if (baixo <alto) [
+         pivot_location = Partição (A, baixa, alta)
+         Quicksort (A, baixa, pivot_location)
+         Quicksort (A, pivot_location + 1, high)
+     ]
+]
+Partição (A como matriz, baixa como int, alta como int) [
+      pivô = A [baixo]
+      parte esquerda = baixa
+
+      para i = baixo + 1 a alto [
+          if (A [i] <pivot) então [
+              troca (A [i], A [parte esquerda + 1])
+              parte esquerda = parte esquerda + 1
+          ]
+      ]
+      troca (pivô, A [parte esquerda])
+
+     return (parte esquerda)]
+ </code>
+                  <br/>
+                  <br/>
 <a href="https://pt.wikipedia.org/wiki/Quicksort">Referência</a>
 </ion-content>

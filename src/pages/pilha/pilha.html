@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>pilha</ion-title>
+    <ion-title>Pilha - Conceito</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -27,13 +27,46 @@
 o elemento removido é o que está na estrutura há menos tempo.</p>
 <p>Em outras palavras, o primeiro objeto a ser inserido na pilha é o último a ser removido. Essa política é conhecida pela sigla LIFO (= Last-In-First-Out).
 </p>
+<h5> Segue abaixo um pseudocódigo</h5>
 
+<code style="white-space: pre-line;">
+  registro Nodo
+     dados
+     próximo
+ 
+   Pilha de discos
+      Node stackPointer
+ 
+   função push (Stack stack, Element element)
+      novo (newNode)
+      newNode.data: = elemento
+      newNode.next: = stack.stackPointer
+      stack.stackPointer: = newNode
+ 
+  função pop (pilha Stack)
+      nó: = stack.stackPointer
+      stack.stackPointer: = node.next
+      elemento: = node.data
+      elemento de retorno
+ 
+  função top (pilha Stack)
+      return stack.stackPointer.data
+ 
+  comprimento da função (pilha de pilha)
+      comprimento: = 0
+      nó: = stack.stackPointer
+      enquanto nó não nulo
+          comprimento: = comprimento + 1
+          nó: = node.next
+     
+      retorna tamanho;
+ </code>
+                  <br/>
+                  <br/>
 <a href="https://www.ime.usp.br/~pf/algoritmos/aulas/pilha.html">Referência</a>
 </ion-content>
 <ion-footer><div class="row">
-  <div class="col">
-    <button ion-button full color="secondary" (click)="openModalCodigo()">Código</button>
-  </div>
+
   <div class="col">
     <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>
   </div>

@@ -11,15 +11,26 @@
   <img src="assets/imgs/Bubblesort.gif"/>
 <p>O bubble sort, ou ordenação por flutuação (literalmente "por bolha"), é um algoritmo de ordenação dos mais simples.  A ideia é percorrer o vector diversas vezes, e a cada passagem fazer flutuar para o topo o maior elemento da sequência. Essa movimentação lembra a forma como as bolhas em um tanque de água procuram seu próprio nível, e disso vem o nome do algoritmo.
 </p>
-<p></p>
-<p></p>
+<h5> Segue abaixo um pseudocódigo</h5>
+
+<code style="white-space: pre-line;">
+  função bubblesort3 (var a como array)
+     para i de 1 a N
+         troca = 0
+         para j de 0 a N - i
+            se a [j]> a [j + 1]
+               troca (a [j], a [j + 1])
+               troca = troca + 1
+         se troca = 0
+             pausa
+fim função
+ </code>
+                  <br/>
+                  <br/>
 
 <a href="https://pt.wikipedia.org/wiki/Bubble_sort">Referência</a>
 </ion-content>
 <ion-footer><div class="row">
-  <div class="col">
-    <button ion-button full color="secondary" (click)="openModalCodigo()">Código</button>
-  </div>
   <div class="col">
     <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>
   </div>
