@@ -12,11 +12,11 @@
 <ion-content padding>
 <h2> Execução da Pilha </h2>
 <div *ngFor="let item of lista; let i = index">
-  <input [(ngModel)]="lista[i]"
+  <input [(ngModel)]="lista[i].value"
          class="form-control"
          type="number"
          style="width: 10%; text-align:center;"
-         value={{item}}>
+         value={{item.value}}>
 </div>
 <button ion-button color="secondary" outline (click)="addInput()" >Adicionar</button>
 <button ion-button color="danger" outline (click)="ordenar()" >Ordenar</button>

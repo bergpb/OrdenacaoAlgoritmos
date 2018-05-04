@@ -12,7 +12,7 @@ export class ModalBolhaAplicacaoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
     this.lista = new Array();
-    this.lista.push(1);
+    this.lista.push({"value" : 1});
   }
 
   ionViewDidLoad() {
@@ -21,7 +21,7 @@ export class ModalBolhaAplicacaoPage {
 
   addInput(){
     let num = Math.floor((Math.random() * 100) + 1);
-    this.lista.push(num);
+    this.lista.push({"value" : num});
     console.log(this.lista);
   }
 
