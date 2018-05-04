@@ -25682,6 +25682,36 @@ ion-content {
   background-image: src= "assets/imgs/HomePage.png";
 }
 
+.fix_image {
+  height: 40vh;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.fix_image_min {
+  height: 18vh;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.scroll-content {
+  overflow-x: hidden;
+  overflow-y: display;
+}
+
+.home {
+  background-image: url("../../assets/imgs/BinaryTreeNew.jpg");
+  background-position: 50% 0%;
+  overflow: hidden;
+  background-color: transparent !important;
+}
+
+.home_image {
+  width: 90% !important;
+}
+
 .bg-image {
   background-image: url("..assets/imgs/Ordena.png");
   background-repeat: no-repeat;

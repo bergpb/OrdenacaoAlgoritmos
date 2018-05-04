@@ -3,78 +3,73 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+    <ion-title text-wrap >Estrutura de Dados - Conceito da Aplicação</ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-        
-    <h2 style="margin-left:33%;">Estrutura de dados</h2>
-    <h4 style="margin-left:33%;">Conceitos e aplicação</h4>
   
-  <ion-content class="card-background-page" style="background-image: url('../../assets/imgs/BinaryTree.png');background-position: 50% 0%;">
-    <div class="row">
-        <div class="col">
-        <ion-card (click)="EstruturaFila()">
-        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.2;"/>
-        <div class="card-title">Fila</div>
-        <div class="card-subtitle">FIFO</div>
-        </ion-card>
-      </div>
-      <div class="col">
-        <ion-card (click)="EstruturaPilha()">
-        <img src="assets/imgs/Ordena.png" style="opacity: 0.2;"/>
-        <div class="card-title">Pilha</div>
-        <div class="card-subtitle">LIFO</div>
-        </ion-card>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col">
-        <ion-card (click)="EstruturaLista()">
-        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
-        <div class="card-title">Lista</div>
-        <div class="card-subtitle">Sequência</div>
-        </ion-card>
-      </div>
-      <div class="col">
-        <ion-card (click)="OrdenacaoInserir()">
-        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
-        <div class="card-title">Inserir</div>
-        <div class="card-subtitle">Insert Sort</div>
-        </ion-card>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col">
-        <ion-card (click)="OrdenacaoBolha()">
-        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
-        <div class="card-title">Bolha</div>
-        <div class="card-subtitle">Bubble Sort</div>
-        </ion-card>
-      </div>
-      <div class="col">
-        <ion-card (click)="OrdenacaoMistura()">
-        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
-        <div class="card-title">Mistura</div>
-        <div class="card-subtitle">Merge Sort</div>
-        </ion-card>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col">
-        <ion-card (click)="OrdenacaoQuick()">
-        <img src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
-        <div class="card-title">Rápida</div>
-        <div class="card-subtitle">Quick Sort</div>
-        </ion-card>
-      </div>
-      <div class="col">
-        <ion-card (click)="OrdenacaoBuscas()">
-        <img  src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
-        <div class="card-title">Binaria e Sequencial</div>
-        <div class="card-subtitle">Bin & Seque Search</div>
-        </ion-card>
-      </div>
-    </div>
-    </ion-content>
+<ion-content padding no-bounce class="card-background-page home">
+  <div class="row">
+    <ion-col>
+      <ion-card (click)="EstruturaFila()">
+      <img class="home_image" src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.2;"/>
+      <div class="card-title">Fila</div>
+      <div class="card-subtitle">FIFO</div>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card (click)="EstruturaPilha()">
+      <img class="home_image" src="assets/imgs/Ordena.png" style="opacity: 0.2;"/>
+      <div class="card-title">Pilha</div>
+      <div class="card-subtitle">LIFO</div>
+      </ion-card>
+    </ion-col>
+  </div>
+  <div class="row">
+    <ion-col>
+      <ion-card (click)="EstruturaLista()">
+      <img class="home_image" src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
+      <div class="card-title">Lista</div>
+      <div class="card-subtitle">Sequência</div>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card (click)="OrdenacaoInserir()">
+      <img  class="home_image" src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
+      <div class="card-title">Inserir</div>
+      <div class="card-subtitle">Insert Sort</div>
+      </ion-card>
+    </ion-col>
+  </div>
+  <div class="row">
+      <ion-col>
+      <ion-card (click)="OrdenacaoBolha()">
+      <img class="home_image" src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
+      <div class="card-title">Bolha</div>
+      <div class="card-subtitle">Bubble Sort</div>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card (click)="OrdenacaoMistura()">
+      <img  class="home_image" src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
+      <div class="card-title">Mistura</div>
+      <div class="card-subtitle">Merge Sort</div>
+      </ion-card>
+    </ion-col>
+  </div>
+  <div class="row">
+      <ion-col>
+      <ion-card (click)="OrdenacaoQuick()">
+      <img class="home_image" src="assets/imgs/FilaPilhaLista.png" style="opacity: 0.1;"/>
+      <div class="card-title">Rápida</div>
+      <div class="card-subtitle">Quick Sort</div>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card (click)="OrdenacaoBuscas()">
+      <img  class="home_image" src="assets/imgs/Ordena.png" style="opacity: 0.1;"/>
+      <div style="margin-top: -10px !important" class="card-title">Binária e Sequencial</div>
+      <div style="padding-top: 15%" class="card-subtitle">Bin & Seque Search</div>
+      </ion-card>
+    </ion-col>
+  </div>
 </ion-content>
