@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
-/**
- * Generated class for the ModalBolhaAplicacaoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-modal-bolha-aplicacao',
@@ -15,12 +8,37 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class ModalBolhaAplicacaoPage {
 
+  public lista : any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+    this.lista = new Array();
+    this.lista.push(1);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalFilaCodigoPage');
   }
+
+  addInput(){
+    let num = Math.floor((Math.random() * 100) + 1);
+    this.lista.push(num);
+    console.log(this.lista);
+  }
+
+  ordenar(){
+    let aux;
+    for (let i = 0; i < this.lista.length; i++) {
+      for (let j = 0; j < this.lista.length; j++) {
+          if(this.lista[i].value < this.lista[j].value){
+            aux = this.lista[i].value;
+            this.lista[i].value = this.lista[j].value;
+            this.lista[j].value = aux;
+        }
+      }
+    }
+    console.log(this.lista);
+  }
+
    closeModal() {
     this.viewCtrl.dismiss();
   }

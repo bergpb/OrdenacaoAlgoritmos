@@ -11,8 +11,14 @@
 
 <ion-content padding>
 <h2> Execução da Pilha </h2>
-
-<button ion-button color="secondary" outline >Insere</button>
-<button ion-button color="danger" outline >Retira</button>
+<div *ngFor="let item of lista; let i = index">
+  <input [(ngModel)]="lista[i]"
+         class="form-control"
+         type="number"
+         style="width: 10%; text-align:center;"
+         value={{item}}>
+</div>
+<button ion-button color="secondary" outline (click)="addInput()" >Adicionar</button>
+<button ion-button color="danger" outline (click)="ordenar()" >Ordenar</button>
 
 </ion-content>

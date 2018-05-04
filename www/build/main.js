@@ -128,31 +128,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the ModalBolhaAplicacaoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 var ModalBolhaAplicacaoPage = /** @class */ (function () {
     function ModalBolhaAplicacaoPage(navCtrl, navParams, viewCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
+        this.lista = new Array();
+        this.lista.push(1);
     }
     ModalBolhaAplicacaoPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ModalFilaCodigoPage');
+    };
+    ModalBolhaAplicacaoPage.prototype.addInput = function () {
+        var num = Math.floor((Math.random() * 100) + 1);
+        this.lista.push(num);
+        console.log(this.lista);
+    };
+    ModalBolhaAplicacaoPage.prototype.ordenar = function () {
+        var aux;
+        for (var i = 0; i < this.lista.length; i++) {
+            for (var j = 0; j < this.lista.length; j++) {
+                if (this.lista[i].value < this.lista[j].value) {
+                    aux = this.lista[i].value;
+                    this.lista[i].value = this.lista[j].value;
+                    this.lista[j].value = aux;
+                }
+            }
+        }
+        console.log(this.lista);
     };
     ModalBolhaAplicacaoPage.prototype.closeModal = function () {
         this.viewCtrl.dismiss();
     };
     ModalBolhaAplicacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-bolha-aplicacao',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>modal_bolha_aplicacao</ion-title>\n  </ion-navbar>\n  <button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Pilha </h2>\n\n<button ion-button color="secondary" outline >Insere</button>\n<button ion-button color="danger" outline >Retira</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/,
+            selector: 'page-modal-bolha-aplicacao',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>modal_bolha_aplicacao</ion-title>\n\n  </ion-navbar>\n\n  <button ion-button icon-left (click)="closeModal()">\n\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n\n  Voltar\n\n</button>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n<h2> Execução da Pilha </h2>\n\n<div *ngFor="let item of lista; let i = index">\n\n  <input [(ngModel)]="lista[i]"\n\n         class="form-control"\n\n         type="number"\n\n         style="width: 10%; text-align:center;"\n\n         value={{item}}>\n\n</div>\n\n<button ion-button color="secondary" outline (click)="addInput()" >Adicionar</button>\n\n<button ion-button color="danger" outline (click)="ordenar()" >Ordenar</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _c || Object])
     ], ModalBolhaAplicacaoPage);
     return ModalBolhaAplicacaoPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=modal-bolha-aplicacao.js.map
@@ -160,51 +175,6 @@ var ModalBolhaAplicacaoPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 105:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuscasPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the BuscasPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var BuscasPage = /** @class */ (function () {
-    function BuscasPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    BuscasPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad BuscasPage');
-    };
-    BuscasPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-buscas',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Buscas</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img class="fix_image" src="assets/imgs/Buscabinseq.gif"/>\n<h4>Binaria</h4>\n<p>A pesquisa ou busca binária (em inglês binary search algorithm ou binary chop) é um algoritmo de busca em vetores que segue o paradigma de divisão e conquista. Ela parte do pressuposto de que o vetor está ordenado e realiza sucessivas divisões do espaço de busca comparando o elemento buscado (chave) com o elemento no meio do vetor. Se o elemento do meio do vetor for a chave, a busca termina com sucesso. Caso contrário, se o elemento do meio vier antes do elemento buscado, então a busca continua na metade posterior do vetor. E finalmente, se o elemento do meio vier depois da chave, a busca continua na metade anterior do vetor.</p>\n<h4>Sequencial</h4>\n<p>Encontrar informações em uma matriz desordenada requer uma pesquisa\nsequencial, começando no primeiro elemento e parando quando o elemento procurado\nou o final da matriz é encontrado. Esse método deve ser usado em dados desordenados,\nmas também pode ser aplicado a dados ordenados.\nÉ fácil de ser codificada. Funciona da seguinte forma: a partir do primeiro\nregistro, pesquise sequencialmente até encontrar a chave procurada; então pare.</p>\n<h5> Segue abaixo os pseudocódigos</h5>\n<h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\n  BUSCA-BINÁRIA (V[], início, fim, e)\n    i recebe o índice do meio entre início e fim\n    se (v[i] = e) entao\n        devolva o índice i   # elemento e encontrado\n    fimse\n    se (inicio = fim) entao\n        não encontrou o elemento procurado\n    senão\n       se (V[i] vem antes de e) então\n          faça a BUSCA-BINÁRIA(V, i+1, fim, e)\n       senão\n          faça a BUSCA-BINÁRIA(V, inicio, i-1, e)\n       fimse\n    fimse\n </code>\n <h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\nPESQUISA-SEQUENCIAL\nprocura (lista, elemento):\nverifica (lista, lista)\npor índice no intervalo (lista):\nse lista [indice] == elemento:\nretorna indice\nse não:\nretorna Nenhum\n </code>\n                  <br/>\n                  <br/>\n<a href="https://erinaldosn.files.wordpress.com/2010/12/aula33.pdf">Referência</a>\n</ion-content>'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], BuscasPage);
-    return BuscasPage;
-}());
-
-//# sourceMappingURL=buscas.js.map
-
-/***/ }),
-
-/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -253,7 +223,7 @@ var ModalFilaCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 107:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -340,163 +310,52 @@ var ModalFilaAplicacaoPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 107:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuscasPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the BuscasPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var BuscasPage = /** @class */ (function () {
+    function BuscasPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    BuscasPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BuscasPage');
+    };
+    BuscasPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-buscas',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Buscas</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img class="fix_image" src="assets/imgs/Buscabinseq.gif"/>\n<h4>Binaria</h4>\n<p>A pesquisa ou busca binária (em inglês binary search algorithm ou binary chop) é um algoritmo de busca em vetores que segue o paradigma de divisão e conquista. Ela parte do pressuposto de que o vetor está ordenado e realiza sucessivas divisões do espaço de busca comparando o elemento buscado (chave) com o elemento no meio do vetor. Se o elemento do meio do vetor for a chave, a busca termina com sucesso. Caso contrário, se o elemento do meio vier antes do elemento buscado, então a busca continua na metade posterior do vetor. E finalmente, se o elemento do meio vier depois da chave, a busca continua na metade anterior do vetor.</p>\n<h4>Sequencial</h4>\n<p>Encontrar informações em uma matriz desordenada requer uma pesquisa\nsequencial, começando no primeiro elemento e parando quando o elemento procurado\nou o final da matriz é encontrado. Esse método deve ser usado em dados desordenados,\nmas também pode ser aplicado a dados ordenados.\nÉ fácil de ser codificada. Funciona da seguinte forma: a partir do primeiro\nregistro, pesquise sequencialmente até encontrar a chave procurada; então pare.</p>\n<h5> Segue abaixo os pseudocódigos</h5>\n<h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\n  BUSCA-BINÁRIA (V[], início, fim, e)\n    i recebe o índice do meio entre início e fim\n    se (v[i] = e) entao\n        devolva o índice i   # elemento e encontrado\n    fimse\n    se (inicio = fim) entao\n        não encontrou o elemento procurado\n    senão\n       se (V[i] vem antes de e) então\n          faça a BUSCA-BINÁRIA(V, i+1, fim, e)\n       senão\n          faça a BUSCA-BINÁRIA(V, inicio, i-1, e)\n       fimse\n    fimse\n </code>\n <h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\nPESQUISA-SEQUENCIAL\nprocura (lista, elemento):\nverifica (lista, lista)\npor índice no intervalo (lista):\nse lista [indice] == elemento:\nretorna indice\nse não:\nretorna Nenhum\n </code>\n                  <br/>\n                  <br/>\n<a href="https://erinaldosn.files.wordpress.com/2010/12/aula33.pdf">Referência</a>\n</ion-content>'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], BuscasPage);
+    return BuscasPage;
+}());
+
+//# sourceMappingURL=buscas.js.map
+
+/***/ }),
+
 /***/ 108:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InserirPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(110);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var InserirPage = /** @class */ (function () {
-    function InserirPage(navCtrl, navParams, modalCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-    }
-    InserirPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad InserirPage');
-    };
-    InserirPage.prototype.openModalCodigo = function () {
-        var myModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__modal_inserir_codigo_modal_inserir_codigo__["a" /* ModalInserirCodigoPage */]);
-        myModal.present();
-        console.log('modal codigo aberto');
-    };
-    InserirPage.prototype.openModalAplicacao = function () {
-        var myModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__modal_inserir_aplicacao_modal_inserir_aplicacao__["a" /* ModalInserirAplicacaoPage */]);
-        myModal.present();
-        console.log('modal aplicacao aberto');
-    };
-    InserirPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-inserir',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/inserir/inserir.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Insert - Conceito</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img class="fix_image" src="assets/imgs/Insertsort.gif"/>\n<p>Insertion Sort, ou ordenação por inserção, é o algoritmo de ordenação que, dado uma estrutura (array, lista) constrói uma matriz final com um elemento de cada vez, uma inserção por vez. Assim como algoritmos de ordenação quadrática, é bastante eficiente para problemas com pequenas entradas, sendo o mais eficiente entre os algoritmos desta ordem de classificação.\n</p>\n<h5> Segue abaixo um pseudocódigo</h5>\n\n<code style="white-space: pre-line;"> FUNÇÃO INSERTION_SORT (A[], tamanho)\n        VARIÁVEIS\n                i, j, eleito\n        PARA I <- 1 ATÉ (tamanho-1) FAÇA\n                eleito <- A[i];\n                j <- i-1;\n                ENQUANTO ((j>=0) E (eleito < A[j])) FAÇA\n                          A[j+1]:= A[j];\n# Elemento de lista numerada\n                          j:=j-1;\n                FIM_ENQUANTO\n                A[j+1] <- eleito;\n        FIM_PARA\nFIM;</code>\n                  <br/>\n                  <br/>\n\n<a href="https://pt.wikipedia.org/wiki/Insertion_sort">Referência</a>\n</ion-content>\n<ion-footer><div class="row">\n  \n  <div class="col">\n    <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>\n  </div>\n</div></ion-footer>'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/inserir/inserir.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]])
-    ], InserirPage);
-    return InserirPage;
-}());
-
-//# sourceMappingURL=inserir.js.map
-
-/***/ }),
-
-/***/ 109:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalInserirCodigoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the ModalInserirCodigoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ModalInserirCodigoPage = /** @class */ (function () {
-    function ModalInserirCodigoPage(navCtrl, navParams, viewCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-    }
-    ModalInserirCodigoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ModalFilaCodigoPage');
-    };
-    ModalInserirCodigoPage.prototype.closeModal = function () {
-        this.viewCtrl.dismiss();
-    };
-    ModalInserirCodigoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-inserir-codigo',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-codigo/modal-inserir-codigo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>modal_inserir_aplicacao</ion-title>\n  </ion-navbar>\n  <button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Pilha </h2>\n\n<button ion-button color="secondary" outline >Insere</button>\n<button ion-button color="danger" outline >Retira</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-codigo/modal-inserir-codigo.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
-    ], ModalInserirCodigoPage);
-    return ModalInserirCodigoPage;
-}());
-
-//# sourceMappingURL=modal-inserir-codigo.js.map
-
-/***/ }),
-
-/***/ 110:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalInserirAplicacaoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the ModalInserirAplicacaoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ModalInserirAplicacaoPage = /** @class */ (function () {
-    function ModalInserirAplicacaoPage(alertCtrl, navCtrl, navParams, viewCtrl) {
-        this.alertCtrl = alertCtrl;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-    }
-    ModalInserirAplicacaoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ModalInserirAplicacaoPage');
-    };
-    ModalInserirAplicacaoPage.prototype.closeModal = function () {
-        this.viewCtrl.dismiss();
-    };
-    ModalInserirAplicacaoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-inserir-aplicacao',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/'<!--\n  Generated template for the ModalInserirAplicacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>modal_inserir_aplicacao</ion-title>\n  </ion-navbar>\n  <button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Inserir </h2>\n\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Insere</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Retira</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
-    ], ModalInserirAplicacaoPage);
-    return ModalInserirAplicacaoPage;
-}());
-
-//# sourceMappingURL=modal-inserir-aplicacao.js.map
-
-/***/ }),
-
-/***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -545,7 +404,7 @@ var ModalListaCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 112:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -631,6 +490,162 @@ var ModalListaAplicacaoPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=modal-lista-aplicacao.js.map
+
+/***/ }),
+
+/***/ 110:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InserirPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(112);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var InserirPage = /** @class */ (function () {
+    function InserirPage(navCtrl, navParams, modalCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+    }
+    InserirPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad InserirPage');
+    };
+    InserirPage.prototype.openModalCodigo = function () {
+        var myModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__modal_inserir_codigo_modal_inserir_codigo__["a" /* ModalInserirCodigoPage */]);
+        myModal.present();
+        console.log('modal codigo aberto');
+    };
+    InserirPage.prototype.openModalAplicacao = function () {
+        var myModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__modal_inserir_aplicacao_modal_inserir_aplicacao__["a" /* ModalInserirAplicacaoPage */]);
+        myModal.present();
+        console.log('modal aplicacao aberto');
+    };
+    InserirPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-inserir',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/inserir/inserir.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Insert - Conceito</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img class="fix_image" src="assets/imgs/Insertsort.gif"/>\n<p>Insertion Sort, ou ordenação por inserção, é o algoritmo de ordenação que, dado uma estrutura (array, lista) constrói uma matriz final com um elemento de cada vez, uma inserção por vez. Assim como algoritmos de ordenação quadrática, é bastante eficiente para problemas com pequenas entradas, sendo o mais eficiente entre os algoritmos desta ordem de classificação.\n</p>\n<h5> Segue abaixo um pseudocódigo</h5>\n\n<code style="white-space: pre-line;"> FUNÇÃO INSERTION_SORT (A[], tamanho)\n        VARIÁVEIS\n                i, j, eleito\n        PARA I <- 1 ATÉ (tamanho-1) FAÇA\n                eleito <- A[i];\n                j <- i-1;\n                ENQUANTO ((j>=0) E (eleito < A[j])) FAÇA\n                          A[j+1]:= A[j];\n# Elemento de lista numerada\n                          j:=j-1;\n                FIM_ENQUANTO\n                A[j+1] <- eleito;\n        FIM_PARA\nFIM;</code>\n                  <br/>\n                  <br/>\n\n<a href="https://pt.wikipedia.org/wiki/Insertion_sort">Referência</a>\n</ion-content>\n<ion-footer><div class="row">\n  \n  <div class="col">\n    <button ion-button full color="secondary" (click)="openModalAplicacao()">Aplicação</button>\n  </div>\n</div></ion-footer>'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/inserir/inserir.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]])
+    ], InserirPage);
+    return InserirPage;
+}());
+
+//# sourceMappingURL=inserir.js.map
+
+/***/ }),
+
+/***/ 111:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalInserirCodigoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the ModalInserirCodigoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ModalInserirCodigoPage = /** @class */ (function () {
+    function ModalInserirCodigoPage(navCtrl, navParams, viewCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+    }
+    ModalInserirCodigoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ModalFilaCodigoPage');
+    };
+    ModalInserirCodigoPage.prototype.closeModal = function () {
+        this.viewCtrl.dismiss();
+    };
+    ModalInserirCodigoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-modal-inserir-codigo',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-codigo/modal-inserir-codigo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>modal_inserir_aplicacao</ion-title>\n  </ion-navbar>\n  <button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Pilha </h2>\n\n<button ion-button color="secondary" outline >Insere</button>\n<button ion-button color="danger" outline >Retira</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-codigo/modal-inserir-codigo.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
+    ], ModalInserirCodigoPage);
+    return ModalInserirCodigoPage;
+}());
+
+//# sourceMappingURL=modal-inserir-codigo.js.map
+
+/***/ }),
+
+/***/ 112:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalInserirAplicacaoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the ModalInserirAplicacaoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ModalInserirAplicacaoPage = /** @class */ (function () {
+    function ModalInserirAplicacaoPage(alertCtrl, navCtrl, navParams, viewCtrl) {
+        this.alertCtrl = alertCtrl;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+    }
+    ModalInserirAplicacaoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ModalInserirAplicacaoPage');
+    };
+    ModalInserirAplicacaoPage.prototype.closeModal = function () {
+        this.viewCtrl.dismiss();
+    };
+    ModalInserirAplicacaoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-modal-inserir-aplicacao',template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/'<!--\n  Generated template for the ModalInserirAplicacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>modal_inserir_aplicacao</ion-title>\n  </ion-navbar>\n  <button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Inserir </h2>\n\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Insere</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Retira</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
+    ], ModalInserirAplicacaoPage);
+    return ModalInserirAplicacaoPage;
+}());
+
+//# sourceMappingURL=modal-inserir-aplicacao.js.map
 
 /***/ }),
 
@@ -989,27 +1004,27 @@ var map = {
 		19
 	],
 	"../pages/buscas/buscas.module": [
-		290,
+		291,
 		18
 	],
 	"../pages/fila/fila.module": [
-		291,
+		290,
 		17
 	],
 	"../pages/inserir/inserir.module": [
-		292,
+		293,
 		16
 	],
 	"../pages/lista/lista.module": [
-		293,
+		292,
 		15
 	],
 	"../pages/mistura/mistura.module": [
-		294,
+		295,
 		14
 	],
 	"../pages/modal-bolha-aplicacao/modal-bolha-aplicacao.module": [
-		295,
+		294,
 		13
 	],
 	"../pages/modal-bolha-codigo/modal-bolha-codigo.module": [
@@ -1091,10 +1106,10 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fila_fila__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pilha_pilha__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lista_lista__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__inserir_inserir__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__inserir_inserir__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bolha_bolha__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mistura_mistura__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__buscas_buscas__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__buscas_buscas__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__quick_quick__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1201,19 +1216,19 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_fila_fila__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_pilha_pilha__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_lista_lista__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_inserir_inserir__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_inserir_inserir__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_bolha_bolha__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_mistura_mistura__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_buscas_buscas__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_buscas_buscas__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_quick_quick__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_modal_inserir_aplicacao_modal_inserir_aplicacao__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_modal_mistura_codigo_modal_mistura_codigo__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_modal_mistura_aplicacao_modal_mistura_aplicacao__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_modal_bolha_codigo_modal_bolha_codigo__ = __webpack_require__(103);
@@ -1285,12 +1300,12 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/bolha/bolha.module#BolhaPageModule', name: 'BolhaPage', segment: 'bolha', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/buscas/buscas.module#BuscasPageModule', name: 'BuscasPage', segment: 'buscas', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fila/fila.module#FilaPageModule', name: 'FilaPage', segment: 'fila', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/inserir/inserir.module#InserirPageModule', name: 'InserirPage', segment: 'inserir', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/buscas/buscas.module#BuscasPageModule', name: 'BuscasPage', segment: 'buscas', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lista/lista.module#ListaPageModule', name: 'ListaPage', segment: 'lista', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/mistura/mistura.module#MisturaPageModule', name: 'MisturaPage', segment: 'mistura', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/inserir/inserir.module#InserirPageModule', name: 'InserirPage', segment: 'inserir', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-bolha-aplicacao/modal-bolha-aplicacao.module#ModalBolhaAplicacaoPageModule', name: 'ModalBolhaAplicacaoPage', segment: 'modal-bolha-aplicacao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mistura/mistura.module#MisturaPageModule', name: 'MisturaPage', segment: 'mistura', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-bolha-codigo/modal-bolha-codigo.module#ModalBolhaCodigoPageModule', name: 'ModalBolhaCodigoPage', segment: 'modal-bolha-codigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-fila-aplicacao/modal-fila-aplicacao.module#ModalFilaAplicacaoPageModule', name: 'ModalFilaAplicacaoPage', segment: 'modal-fila-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-fila-codigo/modal-fila-codigo.module#ModalFilaCodigoPageModule', name: 'ModalFilaCodigoPage', segment: 'modal-fila-codigo', priority: 'low', defaultHistory: [] },
@@ -1359,6 +1374,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_fila_fila__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_pilha_pilha__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_lista_lista__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_bolha_bolha__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1376,12 +1392,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MyApp = /** @class */ (function () {
     function MyApp(platform, statusBar, splashScreen) {
         this.platform = platform;
         this.statusBar = statusBar;
         this.splashScreen = splashScreen;
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_8__pages_bolha_bolha__["a" /* BolhaPage */];
         this.initializeApp();
         // used for an example of ngFor and navigation
         this.pages = [
@@ -1407,14 +1424,15 @@ var MyApp = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]) === "function" && _a || Object)
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/home/bergpb/Downloads/Desenvolvimento/OrdenacaoAlgoritmos/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object])
     ], MyApp);
     return MyApp;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=app.component.js.map
@@ -1428,8 +1446,8 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1485,8 +1503,8 @@ var FilaPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
