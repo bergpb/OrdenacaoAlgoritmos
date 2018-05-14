@@ -25740,3 +25740,11 @@ ion-content {
   width: 100%;
   color: #8ad290;
 }
+
+.center {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  margin-left: 1.5vmax;
+  margin-top: 1.5vmax;
+}

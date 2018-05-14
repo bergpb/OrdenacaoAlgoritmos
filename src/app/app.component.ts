@@ -15,7 +15,7 @@ import { BolhaPage } from '../pages/bolha/bolha';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = BolhaPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
