@@ -162,7 +162,7 @@ var ModalBolhaAplicacaoPage = /** @class */ (function () {
     };
     ModalBolhaAplicacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-bolha-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/'<ion-header>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      Bolha - Aplicação\n\n    </ion-title>\n\n    <ion-buttons start>\n\n      <button ion-button (click)="closeModal()">\n\n        <span ion-text color="primary" >Fechar</span>\n\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content padding>\n\n<div class="center">\n\n<h2> Execução do Bolha </h2>\n\n<div *ngFor="let item of lista; let i = index">\n\n  <input [(ngModel)]="lista[i].value"\n\n         class="form-control"\n\n         type="number"\n\n         value={{item.value}}>\n\n</div>\n\n<button ion-button color="secondary" outline (click)="addInput()" >Adicionar</button>\n\n<button ion-button color="danger" outline (click)="ordenar()" >Ordenar</button>\n\n</div>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/,
+            selector: 'page-modal-bolha-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/'<ion-header>\n\n  <ion-toolbar>\n\n    <ion-title>\n\n      Bolha - Aplicação\n\n    </ion-title>\n\n    <ion-buttons start>\n\n      <button ion-button (click)="closeModal()">\n\n        <span ion-text color="primary" >Fechar</span>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content padding>\n\n<div class="center">\n\n<h2> Execução do Bolha </h2>\n\n<div *ngFor="let item of lista; let i = index">\n\n  <input [(ngModel)]="lista[i].value"\n\n         class="form-control"\n\n         type="number"\n\n         value={{item.value}}>\n\n</div>\n\n<button ion-button color="secondary" outline (click)="addInput()" >Adicionar</button>\n\n<button ion-button color="danger" outline (click)="ordenar()" >Ordenar</button>\n\n</div>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-bolha-aplicacao/modal-bolha-aplicacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], ModalBolhaAplicacaoPage);
@@ -174,6 +174,51 @@ var ModalBolhaAplicacaoPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 105:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuscasPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the BuscasPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var BuscasPage = /** @class */ (function () {
+    function BuscasPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    BuscasPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BuscasPage');
+    };
+    BuscasPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-buscas',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Buscas</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img class="fix_image" src="assets/imgs/Buscabinseq.gif"/>\n<h4>Binaria</h4>\n<p>A pesquisa ou busca binária (em inglês binary search algorithm ou binary chop) é um algoritmo de busca em vetores que segue o paradigma de divisão e conquista. Ela parte do pressuposto de que o vetor está ordenado e realiza sucessivas divisões do espaço de busca comparando o elemento buscado (chave) com o elemento no meio do vetor. Se o elemento do meio do vetor for a chave, a busca termina com sucesso. Caso contrário, se o elemento do meio vier antes do elemento buscado, então a busca continua na metade posterior do vetor. E finalmente, se o elemento do meio vier depois da chave, a busca continua na metade anterior do vetor.</p>\n<h4>Sequencial</h4>\n<p>Encontrar informações em uma matriz desordenada requer uma pesquisa\nsequencial, começando no primeiro elemento e parando quando o elemento procurado\nou o final da matriz é encontrado. Esse método deve ser usado em dados desordenados,\nmas também pode ser aplicado a dados ordenados.\nÉ fácil de ser codificada. Funciona da seguinte forma: a partir do primeiro\nregistro, pesquise sequencialmente até encontrar a chave procurada; então pare.</p>\n<h5> Segue abaixo os pseudocódigos</h5>\n<h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\n  BUSCA-BINÁRIA (V[], início, fim, e)\n    i recebe o índice do meio entre início e fim\n    se (v[i] = e) entao\n        devolva o índice i   # elemento e encontrado\n    fimse\n    se (inicio = fim) entao\n        não encontrou o elemento procurado\n    senão\n       se (V[i] vem antes de e) então\n          faça a BUSCA-BINÁRIA(V, i+1, fim, e)\n       senão\n          faça a BUSCA-BINÁRIA(V, inicio, i-1, e)\n       fimse\n    fimse\n </code>\n <h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\nPESQUISA-SEQUENCIAL\nprocura (lista, elemento):\nverifica (lista, lista)\npor índice no intervalo (lista):\nse lista [indice] == elemento:\nretorna indice\nse não:\nretorna Nenhum\n </code>\n                  <br/>\n                  <br/>\n<a href="https://erinaldosn.files.wordpress.com/2010/12/aula33.pdf">Referência</a>\n</ion-content>'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], BuscasPage);
+    return BuscasPage;
+}());
+
+//# sourceMappingURL=buscas.js.map
+
+/***/ }),
+
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -222,7 +267,7 @@ var ModalFilaCodigoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -298,7 +343,7 @@ var ModalFilaAplicacaoPage = /** @class */ (function () {
     };
     ModalFilaAplicacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-fila-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-fila-aplicacao/modal-fila-aplicacao.html"*/'<!--\n  Generated template for the ModalFilaAplicacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Fila - Aplicação  \n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n<div class="center">\n<h2> Elementos na fila: </h2>\n<div class="row">\n  <div *ngIf="fila.length == 0">\n    <div style="color: red;">\n      Fila vazia!\n    </div>\n  </div>\n  <div *ngFor="let item of fila">\n    <input class="form-control" type="number" value={{item}}>\n  </div>\n</div>\n<br/>\n<h2> Operações: </h2>\n<div class="row">\n  <div style="width: 100%;">\n    <input [(ngModel)]="num">\n  </div>\n</div>\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n</div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-fila-aplicacao/modal-fila-aplicacao.html"*/,
+            selector: 'page-modal-fila-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-fila-aplicacao/modal-fila-aplicacao.html"*/'<!--\n  Generated template for the ModalFilaAplicacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Fila - Aplicação  \n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n<div class="center">\n<h2> Elementos na fila: </h2>\n<div class="row">\n  <div *ngIf="fila.length == 0">\n    <div style="color: red;">\n      Fila vazia!\n    </div>\n  </div>\n  <div *ngFor="let item of fila">\n    <input class="form-control" type="number" value={{item}}>\n  </div>\n</div>\n<br/>\n<h2> Operações: </h2>\n<div class="row">\n  <div style="width: 100%;">\n    <input [(ngModel)]="num">\n  </div>\n</div>\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n</div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-fila-aplicacao/modal-fila-aplicacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], ModalFilaAplicacaoPage);
@@ -306,51 +351,6 @@ var ModalFilaAplicacaoPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=modal-fila-aplicacao.js.map
-
-/***/ }),
-
-/***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuscasPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the BuscasPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var BuscasPage = /** @class */ (function () {
-    function BuscasPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    BuscasPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad BuscasPage');
-    };
-    BuscasPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-buscas',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/'<!--\n  Generated template for the PilhaPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Buscas</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <h3>Conceito</h3>\n  <img class="fix_image" src="assets/imgs/Buscabinseq.gif"/>\n<h4>Binaria</h4>\n<p>A pesquisa ou busca binária (em inglês binary search algorithm ou binary chop) é um algoritmo de busca em vetores que segue o paradigma de divisão e conquista. Ela parte do pressuposto de que o vetor está ordenado e realiza sucessivas divisões do espaço de busca comparando o elemento buscado (chave) com o elemento no meio do vetor. Se o elemento do meio do vetor for a chave, a busca termina com sucesso. Caso contrário, se o elemento do meio vier antes do elemento buscado, então a busca continua na metade posterior do vetor. E finalmente, se o elemento do meio vier depois da chave, a busca continua na metade anterior do vetor.</p>\n<h4>Sequencial</h4>\n<p>Encontrar informações em uma matriz desordenada requer uma pesquisa\nsequencial, começando no primeiro elemento e parando quando o elemento procurado\nou o final da matriz é encontrado. Esse método deve ser usado em dados desordenados,\nmas também pode ser aplicado a dados ordenados.\nÉ fácil de ser codificada. Funciona da seguinte forma: a partir do primeiro\nregistro, pesquise sequencialmente até encontrar a chave procurada; então pare.</p>\n<h5> Segue abaixo os pseudocódigos</h5>\n<h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\n  BUSCA-BINÁRIA (V[], início, fim, e)\n    i recebe o índice do meio entre início e fim\n    se (v[i] = e) entao\n        devolva o índice i   # elemento e encontrado\n    fimse\n    se (inicio = fim) entao\n        não encontrou o elemento procurado\n    senão\n       se (V[i] vem antes de e) então\n          faça a BUSCA-BINÁRIA(V, i+1, fim, e)\n       senão\n          faça a BUSCA-BINÁRIA(V, inicio, i-1, e)\n       fimse\n    fimse\n </code>\n <h6> Pesquisa Binária</h6>\n<code style="white-space: pre-line;">\nPESQUISA-SEQUENCIAL\nprocura (lista, elemento):\nverifica (lista, lista)\npor índice no intervalo (lista):\nse lista [indice] == elemento:\nretorna indice\nse não:\nretorna Nenhum\n </code>\n                  <br/>\n                  <br/>\n<a href="https://erinaldosn.files.wordpress.com/2010/12/aula33.pdf">Referência</a>\n</ion-content>'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/buscas/buscas.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], BuscasPage);
-    return BuscasPage;
-}());
-
-//# sourceMappingURL=buscas.js.map
 
 /***/ }),
 
@@ -499,7 +499,7 @@ var ModalInserirAplicacaoPage = /** @class */ (function () {
     };
     ModalInserirAplicacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-inserir-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/'<!--\n  Generated template for the ModalInserirAplicacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Insert - Aplicação\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Inserir </h2>\n\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/,
+            selector: 'page-modal-inserir-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/'<!--\n  Generated template for the ModalInserirAplicacaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Insert - Aplicação\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n<h2> Execução da Inserir </h2>\n\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-inserir-aplicacao/modal-inserir-aplicacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], ModalInserirAplicacaoPage);
@@ -637,7 +637,7 @@ var ModalListaAplicacaoPage = /** @class */ (function () {
     };
     ModalListaAplicacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-lista-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-lista-aplicacao/modal-lista-aplicacao.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Lista - Aplicação\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n\n<ion-content padding>\n  <div class="center">\n<h2> Execução da Lista </h2>\n<div class="row">\n  <div *ngIf="lista.length == 0">\n    <div style="color: red;">\n      Lista vazia!\n    </div>\n  </div>\n  <div *ngFor="let item of lista" style="width: 100%;">\n    <input class="form-control" type="number" style="width: 100%;text-align:center;" value={{item}}>\n  </div>\n</div>\n<br/>\n<h2> Operações da Lista </h2>\n<div class="row">\n  <div style="width: 100%;">\n    <input [(ngModel)]="num">\n  </div>\n</div>\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n</div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-lista-aplicacao/modal-lista-aplicacao.html"*/,
+            selector: 'page-modal-lista-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-lista-aplicacao/modal-lista-aplicacao.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Lista - Aplicação\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n\n<ion-content padding>\n  <div class="center">\n<h2> Execução da Lista </h2>\n<div class="row">\n  <div *ngIf="lista.length == 0">\n    <div style="color: red;">\n      Lista vazia!\n    </div>\n  </div>\n  <div *ngFor="let item of lista" style="width: 100%;">\n    <input class="form-control" type="number" style="width: 100%;text-align:center;" value={{item}}>\n  </div>\n</div>\n<br/>\n<h2> Operações da Lista </h2>\n<div class="row">\n  <div style="width: 100%;">\n    <input [(ngModel)]="num">\n  </div>\n</div>\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n</div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-lista-aplicacao/modal-lista-aplicacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], ModalListaAplicacaoPage);
@@ -811,6 +811,55 @@ var ModalMisturaAplicacaoPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalPilhaCodigoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the ModalPilhaCodigoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ModalPilhaCodigoPage = /** @class */ (function () {
+    function ModalPilhaCodigoPage(navCtrl, navParams, viewCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+    }
+    ModalPilhaCodigoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ModalFilaCodigoPage');
+    };
+    ModalPilhaCodigoPage.prototype.closeModal = function () {
+        this.viewCtrl.dismiss();
+    };
+    ModalPilhaCodigoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-modal-pilha-codigo',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-codigo/modal-pilha-codigo.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Código</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n<button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-content>'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-codigo/modal-pilha-codigo.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
+    ], ModalPilhaCodigoPage);
+    return ModalPilhaCodigoPage;
+}());
+
+//# sourceMappingURL=modal-pilha-codigo.js.map
+
+/***/ }),
+
+/***/ 117:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalPilhaAplicacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
@@ -872,7 +921,7 @@ var ModalPilhaAplicacaoPage = /** @class */ (function () {
             name: 'reverse'
         }),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-pilha-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-aplicacao/modal-pilha-aplicacao.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Pilha - Aplicação\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div class="center">\n<h2> Execução da Pilha </h2>\n<div class="row">\n  <div *ngIf="pilha.length == 0">\n    <div style="color: red;">\n      Pilha vazia!\n    </div>\n  </div>\n  <div *ngFor="let item of pilha" style="width: 100%;">\n    <input class="form-control" type="number" style="width: 100%;text-align:center;" value={{item}}>\n  </div>\n</div>\n<br/>\n<h2> Operações da Pilha </h2>\n<div class="row">\n  <div style="width: 100%;">\n    <input [(ngModel)]="num">\n  </div>\n</div>\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n</div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-aplicacao/modal-pilha-aplicacao.html"*/,
+            selector: 'page-modal-pilha-aplicacao',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-aplicacao/modal-pilha-aplicacao.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Pilha - Aplicação\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="closeModal()">\n        <span ion-text color="primary" >Fechar</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div class="center">\n<h2> Execução da Pilha </h2>\n<div class="row">\n  <div *ngIf="pilha.length == 0">\n    <div style="color: red;">\n      Pilha vazia!\n    </div>\n  </div>\n  <div *ngFor="let item of pilha" style="width: 100%;">\n    <input class="form-control" type="number" style="width: 100%;text-align:center;" value={{item}}>\n  </div>\n</div>\n<br/>\n<h2> Operações da Pilha </h2>\n<div class="row">\n  <div style="width: 100%;">\n    <input [(ngModel)]="num">\n  </div>\n</div>\n<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>\n<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>\n</div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-aplicacao/modal-pilha-aplicacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], ModalPilhaAplicacaoPage);
@@ -883,7 +932,7 @@ var ModalPilhaAplicacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 117:
+/***/ 118:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -928,55 +977,6 @@ var QuickPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 118:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalPilhaCodigoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the ModalPilhaCodigoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ModalPilhaCodigoPage = /** @class */ (function () {
-    function ModalPilhaCodigoPage(navCtrl, navParams, viewCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-    }
-    ModalPilhaCodigoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ModalFilaCodigoPage');
-    };
-    ModalPilhaCodigoPage.prototype.closeModal = function () {
-        this.viewCtrl.dismiss();
-    };
-    ModalPilhaCodigoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-pilha-codigo',template:/*ion-inline-start:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-codigo/modal-pilha-codigo.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Código</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n<button ion-button icon-left (click)="closeModal()">\n  <ion-icon name="ios-arrow-round-back"></ion-icon>\n  Voltar\n</button>\n</ion-content>'/*ion-inline-end:"/home/ubuntu/workspace/OrdenacaoAlgoritmos/src/pages/modal-pilha-codigo/modal-pilha-codigo.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
-    ], ModalPilhaCodigoPage);
-    return ModalPilhaCodigoPage;
-}());
-
-//# sourceMappingURL=modal-pilha-codigo.js.map
-
-/***/ }),
-
 /***/ 128:
 /***/ (function(module, exports) {
 
@@ -1003,11 +1003,11 @@ var map = {
 		19
 	],
 	"../pages/buscas/buscas.module": [
-		291,
+		290,
 		18
 	],
 	"../pages/fila/fila.module": [
-		290,
+		291,
 		17
 	],
 	"../pages/inserir/inserir.module": [
@@ -1027,11 +1027,11 @@ var map = {
 		13
 	],
 	"../pages/modal-bolha-codigo/modal-bolha-codigo.module": [
-		297,
+		296,
 		12
 	],
 	"../pages/modal-fila-aplicacao/modal-fila-aplicacao.module": [
-		296,
+		297,
 		11
 	],
 	"../pages/modal-fila-codigo/modal-fila-codigo.module": [
@@ -1063,19 +1063,19 @@ var map = {
 		4
 	],
 	"../pages/modal-pilha-aplicacao/modal-pilha-aplicacao.module": [
-		305,
+		306,
 		3
 	],
 	"../pages/modal-pilha-codigo/modal-pilha-codigo.module": [
-		307,
+		305,
 		2
 	],
 	"../pages/pilha/pilha.module": [
-		308,
+		307,
 		1
 	],
 	"../pages/quick/quick.module": [
-		306,
+		308,
 		0
 	]
 };
@@ -1108,8 +1108,8 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__inserir_inserir__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bolha_bolha__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mistura_mistura__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__buscas_buscas__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__quick_quick__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__buscas_buscas__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__quick_quick__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1218,12 +1218,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_inserir_inserir__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_bolha_bolha__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_mistura_mistura__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_buscas_buscas__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_quick_quick__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_buscas_buscas__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_quick_quick__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_modal_lista_codigo_modal_lista_codigo__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_modal_lista_aplicacao_modal_lista_aplicacao__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_modal_inserir_codigo_modal_inserir_codigo__ = __webpack_require__(109);
@@ -1299,14 +1299,14 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/bolha/bolha.module#BolhaPageModule', name: 'BolhaPage', segment: 'bolha', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/fila/fila.module#FilaPageModule', name: 'FilaPage', segment: 'fila', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/buscas/buscas.module#BuscasPageModule', name: 'BuscasPage', segment: 'buscas', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/fila/fila.module#FilaPageModule', name: 'FilaPage', segment: 'fila', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/inserir/inserir.module#InserirPageModule', name: 'InserirPage', segment: 'inserir', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lista/lista.module#ListaPageModule', name: 'ListaPage', segment: 'lista', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mistura/mistura.module#MisturaPageModule', name: 'MisturaPage', segment: 'mistura', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-bolha-aplicacao/modal-bolha-aplicacao.module#ModalBolhaAplicacaoPageModule', name: 'ModalBolhaAplicacaoPage', segment: 'modal-bolha-aplicacao', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modal-fila-aplicacao/modal-fila-aplicacao.module#ModalFilaAplicacaoPageModule', name: 'ModalFilaAplicacaoPage', segment: 'modal-fila-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-bolha-codigo/modal-bolha-codigo.module#ModalBolhaCodigoPageModule', name: 'ModalBolhaCodigoPage', segment: 'modal-bolha-codigo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modal-fila-aplicacao/modal-fila-aplicacao.module#ModalFilaAplicacaoPageModule', name: 'ModalFilaAplicacaoPage', segment: 'modal-fila-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-fila-codigo/modal-fila-codigo.module#ModalFilaCodigoPageModule', name: 'ModalFilaCodigoPage', segment: 'modal-fila-codigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-inserir-aplicacao/modal-inserir-aplicacao.module#ModalInserirAplicacaoPageModule', name: 'ModalInserirAplicacaoPage', segment: 'modal-inserir-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-inserir-codigo/modal-inserir-codigo.module#ModalInserirCodigoPageModule', name: 'ModalInserirCodigoPage', segment: 'modal-inserir-codigo', priority: 'low', defaultHistory: [] },
@@ -1314,10 +1314,10 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/modal-lista-codigo/modal-lista-codigo.module#ModalListaCodigoPageModule', name: 'ModalListaCodigoPage', segment: 'modal-lista-codigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-mistura-aplicacao/modal-mistura-aplicacao.module#ModalMisturaAplicacaoPageModule', name: 'ModalMisturaAplicacaoPage', segment: 'modal-mistura-aplicacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-mistura-codigo/modal-mistura-codigo.module#ModalMisturaCodigoPageModule', name: 'ModalMisturaCodigoPage', segment: 'modal-mistura-codigo', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modal-pilha-aplicacao/modal-pilha-aplicacao.module#ModalPilhaAplicacaoPageModule', name: 'ModalPilhaAplicacaoPage', segment: 'modal-pilha-aplicacao', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/quick/quick.module#QuickPageModule', name: 'QuickPage', segment: 'quick', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-pilha-codigo/modal-pilha-codigo.module#ModalPilhaCodigoPageModule', name: 'ModalPilhaCodigoPage', segment: 'modal-pilha-codigo', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/pilha/pilha.module#PilhaPageModule', name: 'PilhaPage', segment: 'pilha', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/modal-pilha-aplicacao/modal-pilha-aplicacao.module#ModalPilhaAplicacaoPageModule', name: 'ModalPilhaAplicacaoPage', segment: 'modal-pilha-aplicacao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/pilha/pilha.module#PilhaPageModule', name: 'PilhaPage', segment: 'pilha', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quick/quick.module#QuickPageModule', name: 'QuickPage', segment: 'quick', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -1442,8 +1442,8 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_fila_codigo_modal_fila_codigo__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_fila_aplicacao_modal_fila_aplicacao__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1560,8 +1560,8 @@ var ListaPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PilhaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_pilha_codigo_modal_pilha_codigo__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_pilha_aplicacao_modal_pilha_aplicacao__ = __webpack_require__(117);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

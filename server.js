@@ -1,7 +1,9 @@
+//nodemon server.js
+
 var express = require('express'),
     app = express();
 
-app.use(express.static('www'));
+app.use('/', express.static(__dirname + '/'));
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 app.all('*', function(req, res, next) {
@@ -13,8 +15,9 @@ app.all('*', function(req, res, next) {
 // API Routes
 // app.get('/blah', routeHandler);
 
-app.set('port', process.env.PORT || 5000);
+var port = 5000;
+var host = 'localhost';
 
-app.listen(app.get('port'), function () {
-    console.log('Express server listening on port ' + app.get('port'));
+app.listen(port, host, function () {
+    console.log('Express server listening on port ' + host+':'+port);
 });
