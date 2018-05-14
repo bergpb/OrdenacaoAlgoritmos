@@ -1,15 +1,20 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>modal_fila_aplicacao</ion-title>
-  </ion-navbar>
-  <button ion-button icon-left (click)="closeModal()">
-  <ion-icon name="ios-arrow-round-back"></ion-icon>
-  Voltar
-</button>
+  <ion-toolbar>
+    <ion-title>
+      Pilha - Aplicação
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="closeModal()">
+        <span ion-text color="primary" >Fechar</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
+  <div class="center">
 <h2> Execução da Pilha </h2>
 <div class="row">
   <div *ngIf="pilha.length == 0">
@@ -28,7 +33,7 @@
     <input [(ngModel)]="num">
   </div>
 </div>
-<button class="form-control" ion-button color="secondary" outline (click)="insert()">Insere</button>
-<button class="form-control" ion-button color="danger" outline (click)="remove()">Retira</button>
-
+<button class="form-control" ion-button color="secondary" outline (click)="insert()">Inserir</button>
+<button class="form-control" ion-button color="danger" outline (click)="remove()">Remover</button>
+</div>
 </ion-content>

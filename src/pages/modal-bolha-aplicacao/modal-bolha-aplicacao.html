@@ -1,24 +1,29 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>modal_bolha_aplicacao</ion-title>
-  </ion-navbar>
-  <button ion-button icon-left (click)="closeModal()">
-  <ion-icon name="ios-arrow-round-back"></ion-icon>
-  Voltar
-</button>
+  <ion-toolbar>
+    <ion-title>
+      Bolha - Aplicação
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="closeModal()">
+        <span ion-text color="primary" >Fechar</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 
+
 <ion-content padding>
-<h2> Execução da Pilha </h2>
+<div class="center">
+<h2> Execução do Bolha </h2>
 <div *ngFor="let item of lista; let i = index">
   <input [(ngModel)]="lista[i].value"
          class="form-control"
          type="number"
-         style="width: 10%; text-align:center;"
          value={{item.value}}>
 </div>
 <button ion-button color="secondary" outline (click)="addInput()" >Adicionar</button>
 <button ion-button color="danger" outline (click)="ordenar()" >Ordenar</button>
-
+</div>
 </ion-content>
