@@ -1,7 +1,5 @@
-//nodemon server.js
-
 var express = require('express'),
-    app = express();
+app = express();
 
 app.use(express.static('www'));
 
@@ -15,9 +13,8 @@ app.all('*', function(req, res, next) {
 // API Routes
 // app.get('/blah', routeHandler);
 
-var port = 5000;
-var host = 'localhost';
+app.set('port', process.env.PORT || 5000);
 
-app.listen(port, host, function () {
-    console.log('Express server listening on port ' + host+':'+port);
+app.listen(app.get('port'), function () {
+    console.log('Express server listening on port ' + app.get('port'));
 });
